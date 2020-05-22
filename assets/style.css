@@ -10,6 +10,10 @@ h1,h2,h3,h4,h5,h6 {
     margin: 0;
 }
 
+/* -------------------------------navbar----------------------------------------------- */
+nav { 
+    z-index: 1;
+}
 nav.desktop-navbar{
     background-color : darkgreen;
     position: fixed;
@@ -37,6 +41,33 @@ nav.desktop-navbar span a{
     height : 7vh;
     background-color : darkgreen;
 }
+/* -----------------------------fixed-social-icons----------------------------------------------- */
+.fixed-social-icons{
+    position: fixed;
+    top : 30%;
+    display: flex;
+    flex-direction: column;
+    width : 3.5vw;
+    background-color: transparent;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius : 10%;
+    /* box-shadow: 5px 5px 8px #8888887e; */
+}
+.fixed-social-icons span{
+    box-sizing: border-box;
+    text-align: center;
+    font-size : 200%;
+    width : 100%;
+    margin-top : 2px;
+    /* border-radius: 20%; */
+    padding : 5px;
+    pointer-events: fill;
+}
+
+/* -------------------------------landing section----------------------------------------------- */
 section.main-section{
     max-width: 100vw;
     height : 90vh;
@@ -69,7 +100,7 @@ section.main-section{
     text-decoration: none;
     color : blueviolet;
 }
-
+/* -------------------------------logistics section----------------------------------------------- */
 .logistics{
     max-width: 100vw;
     height : 90vh;
@@ -120,20 +151,21 @@ section.main-section{
     font-weight: 900;
     color: #353535;
 }
+/* -------------------------------Our Services----------------------------------------------- */
 .services{
     height : 95vh;
     max-width : 100%;
-    /* background-color: #f1f1f1; */
-    margin-top:30px;
-    margin-bottom: 30px;
-    padding : 0 5% 0 5%;
+    background-color: rgb(250, 249, 249);
+    /* margin-top:30px;
+    margin-bottom: 30px; */
+    padding : 20px 5% 30px 5%;
     /* justify-content: center; */
     box-sizing: border-box;
 }
 .services-heading{
     width: 100%;
     text-align: center;
-    margin : 30px 0 30px 0;
+    margin : 30px 0 40px 0;
 }
 .services-heading h1{
     font-size : 250%;
@@ -159,15 +191,15 @@ section.main-section{
     max-width : 32%;
     flex : 32%;
     /* background-color: yellow; */
-    /* border : 1px solid #ebebeb; */
+    border-right : 1px solid #ebebeb;
     transition: all, 0.5s ease;
     border-radius : 2px;
     display: flex;
-    box-shadow: 2px 2px 10px #8888887e;
+    /* box-shadow: 2px 2px 10px #8888887e; */
 }
 .services-provide-container-element:hover{
-    box-shadow: 2px 2px 30px #8888887e;
-    border: none;
+    /* box-shadow: 2px 2px 30px #8888887e; */
+    /* border: none; */
 }
 .services-provide-container-element-icon{
     flex : 30%;
@@ -197,10 +229,85 @@ section.main-section{
 .services-provide-container-element-content p{
     color : #8d8d8d;
 }
+/* -------------------------------About Us----------------------------------------------- */
+.about-us{
+    max-width:100%;
+    height: 90vh;
+    /* background-color: yellow; */
+}
+.about-us-container{
+    max-width : 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.about-us-content-section {
+    flex : 45%;
+    max-width: 45%;
+    /* background-color: yellow; */
+    height: 200px;
+    box-sizing: border-box;
+    padding: 100px 3% 100px 3%;
+}
+.about-us-content-section-heading h2{
+    font-size : 200%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #353535;
+}
+.about-us-content-section-heading h3{
+    color : var(--page-color-scheme);
+}
+.about-us-content-section-para{
+    margin-top: 40px;
+    max-width: 80%;
+    font-family: 'Lato', sans-serif;
+    color : #8d8d8d;
+}
+.about-us-button-section a{
+    text-decoration: none;
+}
+.about-us-button-section a>button{
+    padding : 10px 20px;
+    cursor: pointer;
+    background-color: var(--page-color-scheme);
+    color : white;
+    font-family: 'Lato', sans-serif;
+}
+.about-us-image-section{
+    flex : 45%;
+    max-width: 45%;
+    box-sizing: border-box;
+    /* background-color: red; */
+    position: relative;
+    height: 90vh;
+}
+.about-us-image-section-img{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    left: 50%;
+    top:50%;
+    height: 45vh;
+    /* width : 10vw; */
+}
+.about-us-image-section-img::after{
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 80%;
+    /* background-color: lightgrey; */
+    border : 8px solid black;
+    top: -7%;
+    /* border-radius: 50%; */
+    z-index: -1;
+    right: -5%;
+}
 
 
 
 
+
+/* -------------------------------Media Query----------------------------------------------- */
 
 @media only screen and (max-width: 520px){
     nav.desktop-navbar{
