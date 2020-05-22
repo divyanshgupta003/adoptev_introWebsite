@@ -59,19 +59,23 @@ nav.desktop-navbar span a{
 .fixed-social-icons span{
     box-sizing: border-box;
     text-align: center;
-    font-size : 200%;
+    font-size : 180%;
     width : 100%;
     margin-top : 2px;
+    color : white;
     /* border-radius: 20%; */
     padding : 5px;
-    pointer-events: fill;
 }
 
 /* -------------------------------landing section----------------------------------------------- */
 section.main-section{
     max-width: 100vw;
     height : 90vh;
-    background-color : black;
+    /* background-color : black; */
+    background: url("../images/boIQ61.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed ;
     color : white;
     padding-top: 10vh;
 }
@@ -232,7 +236,7 @@ section.main-section{
 /* -------------------------------About Us----------------------------------------------- */
 .about-us{
     max-width:100%;
-    height: 90vh;
+    height: 95vh;
     /* background-color: yellow; */
 }
 .about-us-container{
@@ -301,6 +305,100 @@ section.main-section{
     /* border-radius: 50%; */
     z-index: -1;
     right: -5%;
+}
+/* -------------------------------contact-us--------------------------------------------- */
+.contact-us{
+    max-width: 100%;
+    height: 90vh;
+    background-color: rgb(250, 249, 249);
+}
+.contact-us-container{
+    height: 100%;
+    max-width : 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.contact-us-content-section {
+    flex : 45%;
+    max-width: 45%;
+    /* background-color: yellow; */
+    height: 200px;
+    box-sizing: border-box;
+    padding: 100px 3% 100px 3%;
+}
+.contact-us-content-section-heading h2{
+    font-size : 200%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #353535;
+}
+.contact-us-content-section-heading h3{
+    color : var(--page-color-scheme);
+}
+.contact-us-content-section-para{
+    margin-top: 40px;
+    max-width: 80%;
+    font-family: 'Lato', sans-serif;
+    color : #8d8d8d;
+}
+.contact-us-form-section{
+    flex : 45%;
+    max-width: 45%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding : 10vh;
+}
+.contact-us-form-section-container{
+    width: 80%;
+    /* background-color: yellow; */
+}
+.contact-us-form-section-container form > input{
+    width : 100%;
+    box-sizing: border-box;
+    padding : 3%;
+    margin-top : 10px;
+    outline: none;
+    border: none;
+    /* color : white; */
+    border-bottom: 1px solid var(--page-color-scheme);
+    /* box-shadow: 5px 5px 8px #8888887e; */
+    /* border-radius : 20%; */
+    background-color: transparent;
+}
+.contact-us-form-section-container form > select{
+    width : 100%;
+    box-sizing: border-box;
+    padding : 3%;
+    margin-top : 10px;
+    outline: none;
+    /* color : var(--page-color-scheme); */
+    border: none;
+    border-bottom: 1px solid #5e5d5d6e;
+    /* box-shadow: 5px 5px 8px #8888887e; */
+    /* border-radius : 20%; */
+    background-color: transparent;
+    color : grey;
+}
+.contact-us-form-section-container form > input[type="submit"]{
+    background-color: var(--page-color-scheme);
+    color : white;
+    cursor: pointer;
+}
+.contact-us-form-section-container form > textarea{
+    width : 100%;
+    box-sizing: border-box;
+    padding : 3%;
+    margin-top : 10px;
+    outline: none;
+    border: none;
+    /* color : white; */
+    border-bottom: 1px solid var(--page-color-scheme);
+    /* box-shadow: 5px 5px 8px #8888887e; */
+    /* border-radius : 20%; */
+    background-color: transparent;
 }
 
 
