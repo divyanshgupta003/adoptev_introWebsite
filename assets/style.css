@@ -3,7 +3,7 @@ body{
     margin : 0;
 }
 :root {
-    --page-color-scheme : rgb(36, 216, 36);
+    --page-color-scheme : #24d824;
   }
 
 h1,h2,h3,h4,h5,h6 { 
@@ -481,6 +481,60 @@ section.main-section{
     /* box-shadow: 5px 5px 8px #8888887e; */
     /* border-radius : 20%; */
     background-color: transparent;  
+}
+/* ------------------------------footer------------------------------------------------- */
+footer{
+    max-width : 100%;
+    background-color: darkgreen;
+    /* height: 200px; */
+    padding : 5% 5% 2% 5%;
+    box-sizing: border-box;
+    color : white;
+    font-family: 'Lato', sans-serif;
+}
+.footer-social-icons{
+    width : 100%;
+    padding : 0px 0 20px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    /* justify-content: center; */
+}
+.footer-social-icons h3{
+    flex : 30%;
+    max-width: 30%;
+}
+.footer-social-icons span{
+    margin-left : 5px;
+    padding : 10px;
+    font-size : 120%;
+    display: flex;
+    align-self: center;
+}
+.footer-discover-page{
+    width : 100%;
+    padding : 30px 0 30px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+.footer-discover-page h3{
+    flex : 30%;
+    max-width: 30%;
+}
+.footer-discover-page h4{
+    margin-left: 20px;
+}
+.footer-ending-part{
+    width : 100%;
+    padding : 10px 0 10px 0;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer-ending-part h6{
+    /* margin-left : 10px; */
 }
 
 
