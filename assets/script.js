@@ -18,6 +18,14 @@ function expandform(val){
 // ------------------------burger icon--------------------------------------------------
 const burgerContainer = document.querySelector(".burger-container");
 const mobileNavbarLinks = document.querySelector(".mobile-navbar-links");
+const mobileNavbarButton = document.querySelectorAll(".mobile-navbar-links div");
+ 
+mobileNavbarButton.forEach(item => item.addEventListener('click' , ()=>{
+        burgerContainer.classList.remove('close');
+        mobileNavbarLinks.style.height = '0px';
+        burgerOpen = true;
+}));
+
 
 let burgerOpen = true;
 burgerContainer.addEventListener('click' , toggleMenu);
@@ -26,7 +34,7 @@ function toggleMenu(){
     console.log('clicked');
     if(burgerOpen){
         burgerContainer.classList.add('close');
-        mobileNavbarLinks.style.height = '100%';
+        mobileNavbarLinks.style.height = '50%';
         burgerOpen = false;
     }else{
         burgerContainer.classList.remove('close');

@@ -103,25 +103,23 @@ nav.mobile-navbar{
     background-color: black;
     display: none;
     position: fixed;
-    top :0;
-    left : 0;
+    top :40px;
+    left : 0px;
     z-index : 9;
-    /* display: flex; */
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    padding-top : 100px;
     overflow: hidden;
 }
 .mobile-navbar-links div{
     max-width : 100%;
     color : white;
     display: flex;
-    justify-content: center;
     font-family: 'Lato', sans-serif;
+    justify-content: center;
     margin-top : 20px;
-    font-size: 150%;
+    font-size: 120%;
 }
+
 
 /* -----------------------------fixed-social-icons----------------------------------------------- */
 .fixed-social-icons{
@@ -548,9 +546,10 @@ footer{
         display: none;
     }
     nav.mobile-navbar{
-        display: none;
+        display: block;
     }
     .mobile-navbar-links{
         display: flex;
     }
+    
 }
