@@ -398,7 +398,7 @@ section.main-section{
     border-bottom: 1px solid var(--page-color-scheme);
     /* box-shadow: 5px 5px 8px #8888887e; */
     /* border-radius : 20%; */
-    background-color: transparent;
+    background-color: transparent;  
 }
 
 
