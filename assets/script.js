@@ -14,3 +14,24 @@ function expandform(val){
         enquiry.setAttribute('placeholder' , "Your Enquiry?");
     }
 }
+
+// ------------------------burger icon--------------------------------------------------
+const burgerContainer = document.querySelector(".burger-container");
+const mobileNavbarLinks = document.querySelector(".mobile-navbar-links");
+
+let burgerOpen = true;
+burgerContainer.addEventListener('click' , toggleMenu);
+
+function toggleMenu(){
+    console.log('clicked');
+    if(burgerOpen){
+        burgerContainer.classList.add('close');
+        mobileNavbarLinks.style.height = '100%';
+        burgerOpen = false;
+    }else{
+        burgerContainer.classList.remove('close');
+        mobileNavbarLinks.style.height = '0px';
+        burgerOpen = true;
+    }
+}
+// ----------------------------------------------------------------------------------------

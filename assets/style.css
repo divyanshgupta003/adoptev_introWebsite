@@ -12,7 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /* -------------------------------navbar----------------------------------------------- */
 nav { 
-    z-index: 1;
+    z-index: 10;
 }
 nav.desktop-navbar{
     background-color : darkgreen;
@@ -23,6 +23,7 @@ nav.desktop-navbar{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    /* display: none; */
 }
 nav.desktop-navbar span{
     height: 60%;
@@ -37,10 +38,91 @@ nav.desktop-navbar span a{
 #navbar-logo {
     height: 110%;
 }
-.mobile-navbar{
-    height : 7vh;
+nav.mobile-navbar{
+    padding: 5px;
+    box-sizing: border-box;
+    width: 100vw;
+    height : 40px;
     background-color : darkgreen;
+    position: fixed;
+    top : 0%;
+    left : 0%;
+    /* z-index: 10; */
+    display: none;
 }
+.burger-container{
+    position: absolute;
+    top : 10px;
+    left : 35px;
+    /* display: flex;
+    flex-direction: column;
+    align-content: center; */
+    transition: all , 0.4s ease;
+    /* justify-content: center; */
+
+}
+.burger-container.close{
+    transform: rotate(180deg);
+}
+.burger-container-lines{
+    width : 28px;
+    height : 4px;
+    margin : 0 0 5px 0;
+    background-color: white;
+    /* margin-top : 5px; */
+}
+.burger-container.close div:nth-child(1){
+    transform: rotate(45deg) translate(7px , 5px);
+    /* background-color: red; */
+}
+.burger-container.close div:nth-child(2){
+    opacity: 0;
+    /* display: none; */
+}
+.burger-container.close div:nth-child(3){
+    transform: rotate(-45deg) translate(7px , -5px);
+}
+/* .burger-container-lines:nth-child(1).close{
+    transform: rotate(45deg);
+    background-color: red;
+} */
+.mobile-navbar-logo{
+    position : absolute;
+    width : 30px ;
+    height: 30px;
+    left : 45%;
+}
+.mobile-navbar-logo img{
+    max-width: 100%;
+    height: 100%;
+}
+.mobile-navbar-links{
+    width : 100vw;
+    transition: all,0.5s ease;
+    height: 0px;
+    background-color: black;
+    display: none;
+    position: fixed;
+    top :0;
+    left : 0;
+    z-index : 9;
+    /* display: flex; */
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding-top : 100px;
+    overflow: hidden;
+}
+.mobile-navbar-links div{
+    max-width : 100%;
+    color : white;
+    display: flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    margin-top : 20px;
+    font-size: 150%;
+}
+
 /* -----------------------------fixed-social-icons----------------------------------------------- */
 .fixed-social-icons{
     position: fixed;
@@ -309,7 +391,7 @@ section.main-section{
 /* -------------------------------contact-us--------------------------------------------- */
 .contact-us{
     max-width: 100%;
-    height: 90vh;
+    height: 80vh;
     background-color: rgb(250, 249, 249);
 }
 .contact-us-container{
@@ -412,6 +494,9 @@ section.main-section{
         display: none;
     }
     nav.mobile-navbar{
-        display: block;
+        display: none;
+    }
+    .mobile-navbar-links{
+        display: flex;
     }
 }
