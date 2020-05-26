@@ -8,7 +8,13 @@ function expandform(val){
         company.style.display = "block";
         position.style.display = "block";
         enquiry.setAttribute('placeholder' , "Support/Proposal you're interested in?");
-    }else{
+    }else if(val == "fleetOwner"){
+        company.style.display = "block";
+        company.setAttribute('placeholder' , "Which Organisation do you belong to?");
+        position.style.display = "none";
+        enquiry.setAttribute('placeholder' , "Hey, What Do you want to Enquire About?");
+    }
+    else{
         company.style.display = "none";
         position.style.display = "none";
         enquiry.setAttribute('placeholder' , "Your Enquiry?");

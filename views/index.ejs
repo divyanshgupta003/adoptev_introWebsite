@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <script src="https://use.fontawesome.com/e2eea6562c.js"></script>
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -201,19 +204,25 @@
             </div>
             <div class="contact-us-form-section">
                 <div class="contact-us-form-section-container">
-                    <form action="">
+                    <form id="enquirySubmitForm" action="/enquiry">
                         <input type="text" name="" id="" placeholder="Your Full Name">
                         <input type="email" name="" id="" placeholder="Your valid Email ID">
                         <input type="number" name="" id=""  placeholder="Phone Number So That We Can Contact You">
                         <select id="cars" onchange="expandform(this.value)">
                             <option value="customer">Customer</option>
                             <option value="partner">Partner</option>
+                            <option value="driver">Driver</option>
+                            <option value="fleetOwner">Fleet Owner</option>
                         </select>
                         <input type="text" name="company" id="contact-us-form-company" style="display: none;" placeholder="A CO. or org you are writing in behalf of">
                         <input type="text" name="position" id="contact-us-form-position" style="display: none;" placeholder="Your Job title">
                         <textarea name="enquiry" id="contact-us-form-enquiry" rows="2" placeholder="Your Enquiry?"></textarea>
-                        <input type="submit" value="End You Enquiry">
+                        <input type="submit" id="enquirySubmitButton" value="End You Enquiry">
                     </form>
+                    <div class="form-submission-after-message">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        Our Team will contact you soon!!
+                    </div>
                 </div>
             </div>
         </div>
@@ -246,6 +255,8 @@
         </div>
     </footer>
     <!-- <br><br><br><br><br><br><br><br><br> -->
+    
+    <script src="js/enquiryAjax.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
