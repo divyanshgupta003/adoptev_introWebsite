@@ -1,6 +1,7 @@
 body{
     padding: 0;
     margin : 0;
+    overflow-x: hidden;
 }
 :root {
     --page-color-scheme : #24d824;
@@ -239,7 +240,7 @@ section.main-section{
 .services{
     height : 95vh;
     max-width : 100%;
-    background-color: rgb(250, 249, 249);
+    /* background-color: rgb(250, 249, 249); */
     /* margin-top:30px;
     margin-bottom: 30px; */
     padding : 20px 5% 30px 5%;
@@ -313,11 +314,13 @@ section.main-section{
 .services-provide-container-element-content p{
     color : #8d8d8d;
 }
+
 /* -------------------------------About Us----------------------------------------------- */
 .about-us{
     max-width:100%;
     height: 95vh;
     /* background-color: yellow; */
+    background-color: rgb(250, 249, 249);
 }
 .about-us-container{
     max-width : 100%;
@@ -385,6 +388,110 @@ section.main-section{
     /* border-radius: 50%; */
     z-index: -1;
     right: -5%;
+}
+/* ---------------------------------------hire-vehicle---------------------------------------- */
+.hire-vehicle{
+    max-width: 100vw;
+    height : 90vh;
+    /* background-color:red; */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: rgb(250, 249, 249);
+    padding-top : 20px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.hire-vehicle-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.hire-vehicle-container-element-1{
+    flex : 30%;
+    max-width : 30%;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f00c;
+    box-shadow: 10px 10px 8px #8888887e;
+}
+.hire-vehicle-container-element-2{
+    flex : 30%;
+    max-width : 30%;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f00c;
+    box-shadow: 10px 10px 8px #8888887e;
+}
+.hire-vehicle-heading{
+    width : 100%;
+    text-align: center;
+    margin : 30px 0 40px 0;
+}
+.hire-vehicle-heading h3{
+    color : var(--page-color-scheme);
+}
+.hire-vehicle-heading h1{
+    font-size : 250%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #353535;
+}
+/* ---------------------------------------partner-us---------------------------------------- */
+.partner-us{
+    max-width: 100vw;
+    height : 90vh;
+    /* background-color:red; */
+    /* margin-top: 20px;
+    margin-bottom: 40px; */
+    /* background-color: rgb(250, 249, 249); */
+    padding-top : 20px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.partner-us-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-evenly;
+}
+.partner-us-container-element-1{
+    flex : 30%;
+    max-width : 30%;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f00c;
+    box-shadow: 10px 10px 8px #8888887e;
+}
+.partner-us-container-element-2{
+    flex : 30%;
+    max-width : 30%;
+    box-sizing: border-box;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f00c;
+    box-shadow: 10px 10px 8px #8888887e;
+}
+.partner-us-heading{
+    width : 100%;
+    text-align: center;
+    margin : 30px 0 40px 0;
+}
+.partner-us-heading h3{
+    color : var(--page-color-scheme);
+}
+.partner-us-heading h1{
+    font-size : 250%;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #353535;
 }
 /* -------------------------------contact-us--------------------------------------------- */
 .contact-us{
