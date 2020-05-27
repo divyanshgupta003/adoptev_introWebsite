@@ -18,22 +18,42 @@ app.set('views', './views');
 app.use('/' , require('./routes/index'));
 
 //connecting the mongoDB
-mongoose.connect(keys.mongouri , {
-    useUnifiedTopology : true,
-    useNewUrlParser : true
-}, (err)=>{
+// mongoose.connect(keys.mongouri , {
+//     // useUnifiedTopology : true,
+//     useNewUrlParser : true
+// }, (err)=>{
+//     if(err){
+//         console.log(`error in connecting database` , err);
+//         return;
+//     }
+//     console.log('connected to the database');
+
+//     app.listen(port , (err)=>{
+//         if(err){
+//             console.log('error in starting server' , err);
+//             return;
+//         }
+//         console.log(`Server running fine at ${port}`);
+//     })
+// })
+mongoose.connect(keys.mongouri , {  useNewUrlParser : true,
+    useUnifiedTopology : true
+},
+   function(err){
     if(err){
-        console.log(`error in connecting database` , error);
+        console.log(err);
         return;
     }
-    console.log('connected to the database');
+    
+    console.log('database working');
 
-    app.listen(port , (err)=>{
+    app.listen(port , function(err){
         if(err){
-            console.log('error in starting server' , err);
+            console.log(err);
             return;
         }
-        console.log(`Server running fine at ${port}`);
-    })
-})
+        console.log('Port running fine on ' + port);
+    });
+    
+});
 
