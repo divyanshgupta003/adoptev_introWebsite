@@ -15,7 +15,7 @@ module.exports.enquiry = async (req,res) =>{
     try{
         let newEnquiry = await Customer.create({
             name : req.body.name,
-            email : req.body.phone,
+            email : req.body.email,
             phone : req.body.phone,
             userType : req.body.userType,
             company : req.body.company,
