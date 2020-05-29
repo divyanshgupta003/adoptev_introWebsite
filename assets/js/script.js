@@ -37,7 +37,6 @@ let burgerOpen = true;
 burgerContainer.addEventListener('click' , toggleMenu);
 
 function toggleMenu(){
-    console.log('clicked');
     if(burgerOpen){
         burgerContainer.classList.add('close');
         mobileNavbarLinks.style.height = '50%';
@@ -49,3 +48,20 @@ function toggleMenu(){
     }
 }
 // ----------------------------------------------------------------------------------------
+
+// ---------------------changing the color of navbar on scroll--------------------------
+const mainSectionDiv = document.getElementsByClassName('main-section')[0];
+document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
+window.addEventListener('scroll' ,  () => {
+    var distFromBottomRect = mainSectionDiv.getBoundingClientRect();
+    var distFromBottom = distFromBottomRect.bottom;
+    if(distFromBottom <= '200'){
+        document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
+        document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
+    }else{
+        document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
+        document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
+    }
+});
+
+//-----------------------------------------------------------------------------------------

@@ -10,21 +10,27 @@ body{
 h1,h2,h3,h4,h5,h6 { 
     margin: 0;
 }
-
+.black-color-class{
+    color : black;
+}
+.white-color-class{
+    color:white;
+}
 /* -------------------------------navbar----------------------------------------------- */
 nav { 
     z-index: 10;
 }
 nav.desktop-navbar{
-    background-color : darkgreen;
+    background-color : transparent;
     position: fixed;
-    height : 7vh;
+    height : 9vh;
     width : 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
     /* display: none; */
+    transition: all , 0.5s ease;
 }
 nav.desktop-navbar span{
     height: 60%;
@@ -34,7 +40,8 @@ nav.desktop-navbar span{
 }
 nav.desktop-navbar span a{
     text-decoration: none;
-    color : white;
+    color : inherit;
+    /* color : white; */
 }
 #navbar-logo {
     height: 110%;

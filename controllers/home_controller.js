@@ -39,13 +39,13 @@ module.exports.enquiry = async (req,res) =>{
 }
 
 module.exports.blog = (req , res)=>{
-    // request('www.googleapis.com/blogger/v3/blogs/4571718800035017301/posts/2490284876532607526?key=AIzaSyB6w3qeKndp3jczGaHRxSpzgWZ3ve9YUWM', { json: true }, (err, res, body) =>{
+    // request('', { json: true }, (err, res, body) =>{
     //     if(err){
     //         return console.log(err);
     //     }
     //     console.log(body.kind);
     // });
-    axios.get('www.googleapis.com/blogger/v3/blogs/4571718800035017301/posts/2490284876532607526?key=AIzaSyB6w3qeKndp3jczGaHRxSpzgWZ3ve9YUWM')
+    axios.get('')
         .then(response => {
         console.log(response.data.url);
         console.log(response.data.explanation);
