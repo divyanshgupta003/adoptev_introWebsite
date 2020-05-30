@@ -46,8 +46,7 @@ h1,h2,h3,h4,h5,h6 {
 section.main-section{
     max-width: 100vw;
     height : 90vh;
-    /* background-color : black; */
-    background: url("../images/boIQ61.jpg");
+    background: url("../images/home-page-landing-image.jpg");
     background-position: center;
     background-size: cover;
     background-attachment:fixed ;
@@ -55,10 +54,6 @@ section.main-section{
     padding-top: 10vh;
 }
 .main-section-writing{
-    /* position: absolute;
-    left : 45%;
-    top : 30%;
-    transform: translate(-50% , -50%); */
     display: flex;
     justify-content: center;
     width: 100%;
@@ -66,10 +61,12 @@ section.main-section{
 .main-section-main-heading{
     font-size : 300%;
     margin-top : 50px;
+    font-weight: 700;
 }
 .main-section-main-tagline{
     font-size: 150%;
     margin-top : 10px;
+    font-weight : 500;
 }
 .main-section-main-link{
     font-size: 120%;
@@ -83,19 +80,14 @@ section.main-section{
 .logistics{
     max-width: 100vw;
     height : 90vh;
-    /* background-color:red; */
     margin-top: 20px;
     margin-bottom: 40px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
 }
 .logistics-container{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     height: 80%;
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -475,16 +467,21 @@ section.main-section{
 }
 .station-partner-us-content-part h3{
     color : var(--page-color-scheme);
+    font-weight: 400;
 }
 .station-partner-us-content-part h2{
     font-size: 250%;
+    font-weight: 600;
 }
 .station-partner-us-content-part p{
     margin-top : 40px;
     font-size: 120%;
+    color: #9ea3ab;
+    font-weight: 400;
 }
 .station-partner-us-content-part-button-section a{
     text-decoration: none;
+    font-weight: 400;
 }
 .station-partner-us-content-part-button-section a>button{
     margin-top : 30px;
@@ -499,7 +496,8 @@ section.main-section{
 .driver-partner-us{
     max-width : 100%;
     height: 70vh;
-    background-color: rgba(0, 238, 0, 0.432);
+    background-color: rgba(151, 255, 151, 0.856);
+    color :white;
 }
 .driver-partner-us *{
     box-sizing: border-box;
@@ -531,14 +529,18 @@ section.main-section{
     padding : 30px 3%;
 }
 .driver-partner-us-content-part h3{
-    color : var(--page-color-scheme);
+    /* color : var(--page-color-scheme); */
+    font-weight: 500;
 }
 .driver-partner-us-content-part h2{
     font-size: 250%;
+    font-weight: 600;
 }
 .driver-partner-us-content-part p{
     margin-top : 40px;
     font-size: 120%;
+    font-weight: 400;
+    color: #373F41;
 }
 .driver-partner-us-content-part-button-section a{
     text-decoration: none;
