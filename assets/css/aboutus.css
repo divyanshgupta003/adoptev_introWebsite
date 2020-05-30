@@ -1,0 +1,120 @@
+body{
+    margin : 0;
+    padding: 0;
+    font-family: 'Barlow', sans-serif;
+}
+.about-us-landing{
+    width: 100%;
+    height: 60vh;
+    background: url('../images/about-us-image.jpg');
+    background-position: center;
+    /* background-attachment: fixed; */
+    background-size: cover;
+}
+.about-us-landing h1{
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+    color: white;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+/* ----------------------mission and vision --------------- */
+.about-us-mission-vision{
+    max-width: 100%;
+    padding: 40px 3%;
+    background-color: rgba(1, 82, 1, 0.932);
+    color : white;
+}
+.about-us-mission-vision-heading{
+    width: 100%;
+}
+.about-us-mission-vision-heading h1{
+    font-weight: 600;
+}
+.about-us-mission-vision-tagline{
+    width : 100%;
+    margin-top : 30px;
+}
+.about-us-mission-vision-container{
+    margin-bottom : 50px;
+    margin-top : 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-us-mission-vision-container-element{
+    flex : 30%;
+    max-width : 30%;
+}
+.about-us-mission-vision-container-element-line{
+    max-width: 15%;
+    height : 6px;
+    background-color : white;
+}
+.about-us-mission-vision-container-element-heading{
+    margin-top : 10px;
+    max-width: 100%;
+}
+.about-us-mission-vision-container-element-heading h2{
+    font-weight: 500;
+}
+.about-us-mission-vision-container-element-content{
+    max-width: 100%;
+    margin-top : 20px;
+    text-align: justify;
+}
+
+/* ----------------------Our Team----------------- */
+.about-us-our-team{
+    max-width: 100%;
+    padding: 50px 3%;
+}
+.about-us-our-team-heading{
+    width: 100%;
+}
+.about-us-our-team-heading h1{
+    font-weight: 600;
+}
+.about-us-our-team-tagline{
+    width : 100%;
+    margin-top : 20px;
+}
+.about-us-our-team-container{
+    margin-top : 40px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.about-us-our-team-container-element{
+    flex : 25%;
+    max-width : 25%;
+}
+.about-us-our-team-container-element-image{
+    max-width : 100%;
+}
+.about-us-our-team-container-element-image img{
+    width : 100%;
+}
+.about-us-our-team-container-element-title{
+    margin-top : 20px;
+}
+.about-us-our-team-container-element-title h3{
+    font-weight: 500;
+}
+.about-us-our-team-container-element-position h5{
+    font-weight: 400;
+}
+.about-us-our-team-container-element-about{
+    margin-top: 30px;
+    max-width: 100%;
+    text-align: justify;
+}
+.about-us-our-team-container-element-line{
+    max-width : 20%;
+    height : 6px;
+    background-color: black;
+    margin-top: 20px;
+}

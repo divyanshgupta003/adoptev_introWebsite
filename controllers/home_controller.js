@@ -61,3 +61,9 @@ module.exports.contactUs = (req,res)=>{
         title : 'Contact Us'
     })
 }
+
+module.exports.aboutUs = (req , res)=>{
+    return res.render('aboutUs' , {
+        title : 'About Us'
+    })
+}

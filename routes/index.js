@@ -7,6 +7,7 @@ router.get('/' , homeController.homePage);
 router.post('/enquiry' , homeController.enquiry);
 router.get('/blog' , homeController.blog);
 router.get('/contactus' , homeController.contactUs);
+router.get('/aboutus' , homeController.aboutUs);
 
 router.use('/' , homeController.errorPage);
 
