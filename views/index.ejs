@@ -1,61 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title%></title>
-    <link href="https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src="https://use.fontawesome.com/e2eea6562c.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
 
-    <!-- ----------------------------------------Navbar------------------------------------------- -->
-    <nav class="desktop-navbar" >
-        <span><img id="navbar-logo" src="./images/Capture11.png" alt="Logo"></span>
-        <span><a href="#">Logistics</a></span>
-        <span><a href="#">About Us</a></span>
-        <span><a href="#">Our Services</a></span>
-        <span><a href="#">Contact Us</a></span>
-        <span><a href="#">Hello World</a></span>
-    </nav>
-    <nav class="mobile-navbar">
-        <div class="burger-container">
-            <div class="burger-container-lines"></div>
-            <div class="burger-container-lines"></div>
-            <div class="burger-container-lines"></div>
-        </div>
-        <div class="mobile-navbar-logo">
-
-        </div>
-        <div class="mobile-navbar-logo">
-            <img src="./images/DCRUST-Date-Sheet.png" alt="Logo">
-        </div>
-    </nav>
-    <section class="mobile-navbar-links">
-        <div><h3>About Us</h3></div>
-        <div><h3>Contact Us</h3></div>
-        <div><h3>Logistics Us</h3></div>
-        <div><h3>Services</h3></div>
-    </section>
+    
     <!-- ----------------------------------side social icons------------------------------- -->
-    <section class="fixed-social-icons">
+    <!-- <section class="fixed-social-icons">
         <span style="background-color :#3b5998 "><i class="fa fa-facebook-f"></i></span>
         <span style="background-color :#00acee "><i class="fa fa-twitter"></i></span>
         <span style="background-color :#db3236 "><i class="fa fa-youtube"></i></span>
         <span style="background-color :#3f729b "><i class="fa fa-instagram"></i></span>
-    </section>
+    </section> -->
     <!-- -----------------------------------------Landing Section------------------------- -->
-    <section class="main-section">
+    <section class="main-section navbar-color-change-div">
         <div class="main-section-writing">
             <h1 class="main-section-main-heading">Mission : Electric</h1>
         </div>
@@ -155,7 +108,7 @@
         </div>
     </section>
     <!-- ------------------------------------------Services we provide (hire-us)----------------------------------- -->
-    <section class="hire-vehicle">
+    <!-- <section class="hire-vehicle">
         <div class="hire-vehicle-heading">
             <h3>What we offer/ Services</h3>
             <h1>You have two Choices</h1>
@@ -168,7 +121,7 @@
                 
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ------------------------------Our services--------------------------------------------- -->
     <section class="services">
         <div class="services-heading">
@@ -226,91 +179,35 @@
         </div>
     </section>
     <!-- ------------------------------------------Partner-us----------------------------------- -->
-    <section class="partner-us">
-        <div class="partner-us-heading">
-            <h3>Partner Us</h3>
-            <h1>Be Our Partner</h1>
-        </div>
-        <div class="partner-us-container">
-            <div class="partner-us-container-element-1">
-
+    <section class="station-partner-us">
+        <div class="station-partner-us-container">
+            <div class="station-partner-us-photo-part">
+                <img src="./images/images.jpg" alt="">
             </div>
-            <div class="partner-us-container-element-2">
-                
-            </div>
-        </div>
-    </section>
-    <!-- --------------------------------------connect-with-us-------------------------------------- -->
-    <section class="contact-us">
-        <div class="contact-us-container">
-            <div class="contact-us-content-section">
-                <div class="contact-us-content-section-heading">
-                    <h3>Contact Us</h3>
-                    <h2>Get In Touch With <b>US</b></h2>
-                </div>
-                <div class="contact-us-content-section-para">
-                    <p>Whether you are a customer or anyone from a company
-                        Have a query..??<br>
-                        Just Fill up the form to drop us a message and someone from our
-                        team will get back in touch with you.</p>
-                </div>
-                
-            </div>
-            <div class="contact-us-form-section">
-                <div class="contact-us-form-section-container">
-                    <form id="enquirySubmitForm" action="/enquiry">
-                        <input type="text" name="name" id="" placeholder="Your Full Name">
-                        <input type="email" name="email" id="" placeholder="Your valid Email ID">
-                        <input type="number" name="phone" id=""  placeholder="Phone Number So That We Can Contact You">
-                        <select name="userType" id="cars" onchange="expandform(this.value)">
-                            <option value="customer">Customer</option>
-                            <option value="partner">Partner</option>
-                            <option value="driver">Driver</option>
-                            <option value="fleetOwner">Fleet Owner</option>
-                        </select>
-                        <input type="text" name="company" id="contact-us-form-company" style="display: none;" placeholder="A CO. or org you are writing in behalf of">
-                        <input type="text" name="position" id="contact-us-form-position" style="display: none;" placeholder="Your Job title">
-                        <textarea name="enquiry" id="contact-us-form-enquiry" rows="2" placeholder="Your Enquiry?"></textarea>
-                        <input type="submit" id="enquirySubmitButton" value="End You Enquiry">
-                    </form>
-                    <div class="form-submission-after-message">
-                        <i class="fa fa-check-circle" aria-hidden="true"></i>
-                        Our Team will contact you soon!!
-                    </div>
+            <div class="station-partner-us-content-part">
+                <h3>AdoptEV Charge</h3>
+                <h2>Charge for Change</h2>
+                <p>We are building India’s first open public fast charging and aggregation network bringing Bharat Charge, CCS and CHAdeMO – all on One Map-One Network.</p>
+                <div class="station-partner-us-content-part-button-section">
+                    <a href="#"><button>Partner With Us</button></a>
                 </div>
             </div>
         </div>
     </section>
-    <!-- --------------------------------------Footer----------------------------------------------- -->
-
-    <footer>
-        <div class="footer-social-icons">
-            <h3>Social Icons</h3>
-            <span style="background-color :#24d824 "><i class="fa fa-facebook-f"></i></span>
-            <span style="background-color :#24d824 "><i class="fa fa-twitter"></i></span>
-            <span style="background-color :#24d824 "><i class="fa fa-youtube"></i></span>
-            <span style="background-color :#24d824 "><i class="fa fa-instagram"></i></span>
+    <section class="driver-partner-us">
+        <div class="driver-partner-us-container">
+            <div class="driver-partner-us-content-part">
+                <h3>AdoptEV Charge</h3>
+                <h2>Charge for Change</h2>
+                <p>We are building India’s first open public fast charging and aggregation network bringing Bharat Charge, CCS and CHAdeMO – all on One Map-One Network.</p>
+                <div class="driver-partner-us-content-part-button-section">
+                    <a href="#"><button>Partner With Us</button></a>
+                </div>
+            </div>
+            <div class="driver-partner-us-photo-part">
+                <img src="./images/carimage.png" alt="">
+            </div>
         </div>
-        <hr style="background: black;" />
-        <div class="footer-discover-page">
-            <h3>Discover AdoptEV</h3>
-            <h4>About Us</h4>
-            <h4>Our Services</h4>
-            <h4>Contact Us</h4>
-            <h4>Logistics</h4>
-        </div>
-        <hr style="background: black;" />
-        <div class="footer-ending-part">
-            <h6>Notice</h6>
-            <h6>Legal Terms</h6>
-            <h6>Terms & Conditions</h6>
-            <h6>Privacy Policy</h6>
-            <h6>Copyright © 2017 AdopEV Pvt. Ltd. All rights reserved.</h6>
-        </div>
-    </footer>
-    <!-- <br><br><br><br><br><br><br><br><br> -->
-    <script src="js/carousel.js"></script>
-    <script src="js/enquiryAjax.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+    </section>
+        
+    

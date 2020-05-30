@@ -55,3 +55,9 @@ module.exports.blog = (req , res)=>{
     });
 
 }
+
+module.exports.contactUs = (req,res)=>{
+    return res.render('contact' , {
+        title : 'Contact Us'
+    })
+}

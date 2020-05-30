@@ -30,13 +30,18 @@ nav.desktop-navbar{
     justify-content: center;
     box-sizing: border-box;
     /* display: none; */
-    transition: all , 0.5s ease;
+    transition: all ,0.4s ease;
 }
 nav.desktop-navbar span{
     height: 60%;
     margin : 0 3% 0 3%;
     /* font-family: 'Caladea', serif; */
     font-family: 'Abel', sans-serif;
+    border : 2px solid transparent;
+    transition: 0.25s ease;
+}
+nav.desktop-navbar span:hover{
+    border-bottom : 2px solid var(--page-color-scheme);
 }
 nav.desktop-navbar span a{
     text-decoration: none;
@@ -130,7 +135,7 @@ nav.mobile-navbar{
 
 
 /* -----------------------------fixed-social-icons----------------------------------------------- */
-.fixed-social-icons{
+/* .fixed-social-icons{
     position: fixed;
     top : 30%;
     display: flex;
@@ -142,7 +147,6 @@ nav.mobile-navbar{
     align-items: center;
     box-sizing: border-box;
     border-radius : 10%;
-    /* box-shadow: 5px 5px 8px #8888887e; */
 }
 .fixed-social-icons span{
     box-sizing: border-box;
@@ -151,9 +155,8 @@ nav.mobile-navbar{
     width : 100%;
     margin-top : 2px;
     color : white;
-    /* border-radius: 20%; */
     padding : 5px;
-}
+} */
 
 /* -------------------------------landing section----------------------------------------------- */
 section.main-section{
@@ -506,24 +509,19 @@ section.main-section{
 
 
 /* ---------------------------------------hire-vehicle---------------------------------------- */
-.hire-vehicle{
+/* .hire-vehicle{
     max-width: 100vw;
     height : 90vh;
-    /* background-color:red; */
     margin-top: 20px;
     margin-bottom: 40px;
     background-color: rgb(250, 249, 249);
     padding-top : 20px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
 }
 .hire-vehicle-container{
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
     height: 60%;
-    /* background-color: yellow; */
     display: flex;
     justify-content: space-evenly;
 }
@@ -556,164 +554,121 @@ section.main-section{
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     color: #353535;
-}
+} */
 /* ---------------------------------------partner-us---------------------------------------- */
-.partner-us{
-    max-width: 100vw;
-    height : 90vh;
-    /* background-color:red; */
-    /* margin-top: 20px;
-    margin-bottom: 40px; */
-    /* background-color: rgb(250, 249, 249); */
-    padding-top : 20px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-}
-.partner-us-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 60%;
-    /* background-color: yellow; */
-    display: flex;
-    justify-content: space-evenly;
-}
-.partner-us-container-element-1{
-    flex : 30%;
-    max-width : 30%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.partner-us-container-element-2{
-    flex : 30%;
-    max-width : 30%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.partner-us-heading{
-    width : 100%;
-    text-align: center;
-    margin : 30px 0 40px 0;
-}
-.partner-us-heading h3{
-    color : var(--page-color-scheme);
-}
-.partner-us-heading h1{
-    font-size : 250%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
-}
-/* -------------------------------contact-us--------------------------------------------- */
-.contact-us{
-    max-width: 100%;
-    height: 80vh;
-    background-color: rgb(250, 249, 249);
-}
-.contact-us-container{
-    height: 100%;
+.station-partner-us{
     max-width : 100%;
+    height: 70vh;
+}
+.station-partner-us *{
+    box-sizing: border-box;
+}
+.station-partner-us-container{
+    max-width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top : 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
-    box-sizing: border-box;
 }
-.contact-us-content-section {
-    flex : 45%;
-    max-width: 45%;
-    /* background-color: yellow; */
-    height: 200px;
-    box-sizing: border-box;
-    padding: 100px 3% 100px 3%;
+.station-partner-us-photo-part{
+    flex : 40%;
+    max-width: 40%;
+    height: 100%;
+    /* background : url('../images/200000-more-electric-vehicle-charging-stations-planned-in-next-4-years-e1528900251291.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
 }
-.contact-us-content-section-heading h2{
-    font-size : 200%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
+.station-partner-us-photo-part img{
+    max-width: 100%;
+    height: 100%;
 }
-.contact-us-content-section-heading h3{
+.station-partner-us-content-part{
+    flex : 50%;
+    max-width: 50%;
+    padding : 30px 3%;
+}
+.station-partner-us-content-part h3{
     color : var(--page-color-scheme);
 }
-.contact-us-content-section-para{
-    margin-top: 40px;
-    max-width: 80%;
-    font-family: 'Lato', sans-serif;
-    color : #8d8d8d;
+.station-partner-us-content-part h2{
+    font-size: 250%;
 }
-.contact-us-form-section{
-    flex : 45%;
-    max-width: 45%;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    padding : 10vh;
+.station-partner-us-content-part p{
+    margin-top : 40px;
+    font-size: 120%;
 }
-.contact-us-form-section-container{
-    width: 80%;
-    /* background-color: yellow; */
+.station-partner-us-content-part-button-section a{
+    text-decoration: none;
 }
-.contact-us-form-section-container form > input{
-    width : 100%;
-    box-sizing: border-box;
-    padding : 3%;
-    margin-top : 10px;
-    outline: none;
-    border: none;
-    /* color : white; */
-    border-bottom: 1px solid var(--page-color-scheme);
-    /* box-shadow: 5px 5px 8px #8888887e; */
-    /* border-radius : 20%; */
-    background-color: transparent;
-}
-.contact-us-form-section-container form > select{
-    width : 100%;
-    box-sizing: border-box;
-    padding : 3%;
-    margin-top : 10px;
-    outline: none;
-    /* color : var(--page-color-scheme); */
-    border: none;
-    border-bottom: 1px solid #5e5d5d6e;
-    /* box-shadow: 5px 5px 8px #8888887e; */
-    /* border-radius : 20%; */
-    background-color: transparent;
-    color : grey;
-}
-.contact-us-form-section-container form > input[type="submit"]{
+.station-partner-us-content-part-button-section a>button{
+    margin-top : 30px;
+    padding : 10px 20px;
+    cursor: pointer;
     background-color: var(--page-color-scheme);
     color : white;
-    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    border : none;
 }
-.contact-us-form-section-container form > textarea{
-    width : 100%;
+/* --------------------------------driver partner with us--------------------------------- */
+.driver-partner-us{
+    max-width : 100%;
+    height: 70vh;
+    background-color: rgba(0, 238, 0, 0.432);
+}
+.driver-partner-us *{
     box-sizing: border-box;
-    padding : 3%;
-    margin-top : 10px;
-    outline: none;
-    border: none;
-    /* color : white; */
-    border-bottom: 1px solid var(--page-color-scheme);
-    /* box-shadow: 5px 5px 8px #8888887e; */
-    /* border-radius : 20%; */
-    background-color: transparent;  
 }
-.form-submission-after-message{
+.driver-partner-us-container{
     max-width: 100%;
-    position: relative;
-    top:30%;
-    display: none;
-    font-size : 150%;
+    height: 100%;
+    /* background-color: red; */
+    padding-top : 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
-.form-submission-after-message i{
+.driver-partner-us-photo-part{
+    flex : 40%;
+    max-width: 40%;
+    height: 100%;
+    /* background : url('../images/200000-more-electric-vehicle-charging-drivers-planned-in-next-4-years-e1528900251291.jpg');
+    background-repeat: no-repeat;
+    background-position: center; */
+}
+.driver-partner-us-photo-part img{
+    max-width: 100%;
+    height: 100%;
+}
+.driver-partner-us-content-part{
+    flex : 50%;
+    max-width: 50%;
+    padding : 30px 3%;
+}
+.driver-partner-us-content-part h3{
     color : var(--page-color-scheme);
-    margin-right : 5px;
 }
+.driver-partner-us-content-part h2{
+    font-size: 250%;
+}
+.driver-partner-us-content-part p{
+    margin-top : 40px;
+    font-size: 120%;
+}
+.driver-partner-us-content-part-button-section a{
+    text-decoration: none;
+}
+.driver-partner-us-content-part-button-section a>button{
+    margin-top : 30px;
+    padding : 10px 20px;
+    cursor: pointer;
+    background-color: var(--page-color-scheme);
+    color : white;
+    font-family: 'Lato', sans-serif;
+    border : none;
+}
+
 /* ------------------------------footer------------------------------------------------- */
 footer{
     max-width : 100%;

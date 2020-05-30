@@ -3,6 +3,12 @@ const port = 8000;
 const mongoose = require('mongoose');
 const keys = require('./keys');
 const app = express();
+const expressLayouts = require('express-ejs-layouts');
+
+//expressLayouts
+app.use(expressLayouts);
+app.set('layout extractStyles', true);
+app.set('layout extractScripts', true);
 
 //Encoding the url text 
 app.use(express.urlencoded());
@@ -17,25 +23,6 @@ app.set('views', './views');
 //connecting the routes folder
 app.use('/' , require('./routes/index'));
 
-//connecting the mongoDB
-// mongoose.connect(keys.mongouri , {
-//     // useUnifiedTopology : true,
-//     useNewUrlParser : true
-// }, (err)=>{
-//     if(err){
-//         console.log(`error in connecting database` , err);
-//         return;
-//     }
-//     console.log('connected to the database');
-
-//     app.listen(port , (err)=>{
-//         if(err){
-//             console.log('error in starting server' , err);
-//             return;
-//         }
-//         console.log(`Server running fine at ${port}`);
-//     })
-// })
 mongoose.connect(keys.mongouri , {  useNewUrlParser : true,
     useUnifiedTopology : true
 },

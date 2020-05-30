@@ -50,11 +50,13 @@ function toggleMenu(){
 // ----------------------------------------------------------------------------------------
 
 // ---------------------changing the color of navbar on scroll--------------------------
-const mainSectionDiv = document.getElementsByClassName('main-section')[0];
+const mainSectionDiv = document.getElementsByClassName('navbar-color-change-div')[0];
+// console.log(mainSectionDiv);
 document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
 window.addEventListener('scroll' ,  () => {
     var distFromBottomRect = mainSectionDiv.getBoundingClientRect();
     var distFromBottom = distFromBottomRect.bottom;
+    // console.log(distFromBottom);
     if(distFromBottom <= '200'){
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
