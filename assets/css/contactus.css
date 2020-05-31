@@ -3,18 +3,22 @@ body{
     padding: 0;
 }
 .contact-us-landing{
-    width: 100%;
+    max-width: 100%;
     height: 60vh;
     background: url('../images/240_F_198377401_nlBw6FN6jdEonsspdqfAmv7ZxkKKgBhJ.jpg');
     background-position: center;
-    /* background-attachment: fixed; */
     background-size: cover;
 }
-.contact-us-landing h1{
+.contact-us-landing-heading{
+    width: 100%;
     position: absolute;
-    left: 50%;
-    top:50%;
     transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    text-align: center;
+}
+.contact-us-landing h1{
+    font-weight: 700;
     color: white;
 }
 /* -------------------------------contact-us--------------------------------------------- */
@@ -57,30 +61,28 @@ body{
     flex : 45%;
     max-width: 45%;
     box-sizing: border-box;
-    position: relative;
+    /* position: relative; */
     display: flex;
     justify-content: center;
     padding : 10vh;
 }
 .contact-us-form-section-container{
     width: 80%;
-    /* background-color: yellow; */
 }
 .contact-us-form-section-container form > input{
-    width : 100%;
+    min-width : 100%;
+    max-width: 100%;
     box-sizing: border-box;
     padding : 3%;
     margin-top : 10px;
     outline: none;
     border: none;
-    /* color : white; */
     border-bottom: 1px solid var(--page-color-scheme);
-    /* box-shadow: 5px 5px 8px #8888887e; */
-    /* border-radius : 20%; */
     background-color: transparent;
 }
 .contact-us-form-section-container form > select{
-    width : 100%;
+    min-width : 100%;
+    max-width: 100%;
     box-sizing: border-box;
     padding : 3%;
     margin-top : 10px;
@@ -99,7 +101,8 @@ body{
     cursor: pointer;
 }
 .contact-us-form-section-container form > textarea{
-    width : 100%;
+    min-width : 100%;
+    max-width: 100%;
     box-sizing: border-box;
     padding : 3%;
     margin-top : 10px;
@@ -121,4 +124,32 @@ body{
 .form-submission-after-message i{
     color : var(--page-color-scheme);
     margin-right : 5px;
+}
+
+@media only screen and (max-width: 780px){
+    .contact-us-container{
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    .contact-us-content-section{
+        max-width: 80%;
+        flex : 80%;
+    }
+    .contact-us-form-section{
+        max-width: 80%;
+        flex:80%;
+    }
+}
+@media only screen and (max-width: 520px){
+    .contact-us-landing{
+        height: 300px;
+    }
+    .contact-us-landing h1{
+        font-size: 150%;
+    }
+    .contact-us-landing-heading{
+        top : 30%;
+    }
 }

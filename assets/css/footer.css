@@ -1,61 +1,150 @@
 /* ------------------------------footer------------------------------------------------- */
 :root {
     --page-color-scheme : #24d824;
-  }
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding : 0;
+}
 footer{
+    font-family: 'Barlow', sans-serif;
+    background-color: #393939;
+    max-width: 100%;
+    padding : 20px 0;
+    color: white;
+}
+.footer-heading-app-container{
+    display: flex;
     max-width : 100%;
-    background-color: darkgreen;
-    /* height: 200px; */
-    padding :  40px 2%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border-bottom: .5px solid rgb(71, 71, 71);
+    padding: 20px 0px;
     box-sizing: border-box;
-    color : white;
-    font-family: 'Lato', sans-serif;
 }
-.footer-social-icons{
-    width : 100%;
-    padding : 0px 0 20px 0;
+.footer-heading-app-container-heading-element{
+    max-width : 45%;
+    flex: 45%;
+    color: var(--page-color-scheme);
+}
+.footer-heading-app-container-heading-element img{
+    width: 150px;
+}
+.footer-heading-app-container-heading-element h2{
+    font-size: 200%;
+    font-weight: 600;
+}
+.footer-heading-app-container-app-element{
+    max-width: 45%;
+    flex: 45%;
     display: flex;
-    align-content: center;
     align-items: center;
-    /* justify-content: center; */
-}
-.footer-social-icons h3{
-    flex : 30%;
-    max-width: 30%;
-}
-.footer-social-icons span{
-    margin-left : 5px;
-    padding : 10px;
-    font-size : 120%;
-    display: flex;
     align-self: center;
-}
-.footer-discover-page{
-    width : 100%;
-    /* padding : 30px 0 30px 0; */
-    font-size: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-}
-.footer-discover-page h3{
-    flex : 30%;
-    max-width: 30%;
-}
-.footer-discover-page h4{
-    margin-left: 20px;
-}
-.footer-ending-part{
-    width : 100%;
-    padding : 10px 0 10px 0;
-    display: flex;
-    align-content: center;
-    align-items: center;
     justify-content: space-evenly;
 }
-.footer-ending-part h6{
-    margin-left : 10px;
+.footer-heading-app-container-app-element h4{
+    font-size: 100%;
+}
+.footer-heading-app-container-app-element img{
+    /* max-width : 100px; */
+    max-height: 40px;
+    width : 120px;
+}
+.footer-content-social-container{
+    max-width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    border-bottom: 0.5px solid rgb(71, 71, 71) ;
+}
+.footer-content-social-container-content{
+    border-right: 1px solid rgb(71, 71, 71);
+    flex : 50%;
+    max-width : 50%;
+}
+.footer-content-social-container-content-heading{
+    width: 100%;
+    text-align: center;
+}
+.footer-content-social-container-content-heading h4{
+    font-weight: 500;
+}
+.footer-content-social-container-content-links{
+    width: 100%;
+    padding: 0px 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.footer-content-social-container-content-links h6{
+    font-weight: 400;
+}
+.footer-content-social-container-social-icons{
+    flex : 50%;
+    max-width: 50%;
+}
+.footer-content-social-container-social-icons-heading{
+    text-align: center;
+}
+.footer-content-social-container-social-icons-icons{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 15%;
+}
+.footer-content-social-container-social-icons-icons-element{
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 30px;
+    color : #393939;
+}
+.footer-copyright-container{
+    width: 100%;
+    text-align: center;
 }
 
-
-
+@media only screen and (max-width: 768px){
+    .footer-heading-app-container{
+        flex-direction: column;
+    }
+    .footer-heading-app-container-heading-element{
+        min-width: 90%;
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .footer-heading-app-container-app-element{
+        min-width: 75%;
+        max-width: 75%;
+        flex : 90%;
+        margin-top : 30px;
+    }
+    .footer-content-social-container{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    .footer-content-social-container-content{
+        flex : 90%;
+        min-width: 90%;
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        border-right: none;
+        border-bottom: 1px solid rgb(71, 71, 71);
+        padding-bottom: 30px;
+    }
+    .footer-content-social-container-social-icons{
+        flex : 90%;
+        min-width: 90%;
+        max-width: 90%;
+        margin-top : 20px;
+    }
+}

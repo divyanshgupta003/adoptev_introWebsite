@@ -560,14 +560,5 @@ section.main-section{
 /* -------------------------------Media Query----------------------------------------------- */
 
 @media only screen and (max-width: 520px){
-    nav.desktop-navbar{
-        display: none;
-    }
-    nav.mobile-navbar{
-        display: block;
-    }
-    .mobile-navbar-links{
-        display: flex;
-    }
     
 }
