@@ -1,4 +1,17 @@
 /* -------------------------------navbar----------------------------------------------- */
+body{
+    padding: 0;
+    margin : 0;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+:root {
+    --page-color-scheme : #24d824;
+  }
+
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+}   
 nav { 
     z-index: 10;
 }
@@ -11,14 +24,11 @@ nav.desktop-navbar{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    /* display: none; */
     transition: all ,0.4s ease;
 }
 nav.desktop-navbar span{
     height: 60%;
     margin : 0 3% 0 3%;
-    /* font-family: 'Caladea', serif; */
-    font-family: 'Abel', sans-serif;
     border : 2px solid transparent;
     transition: 0.25s ease;
 }
@@ -28,7 +38,9 @@ nav.desktop-navbar span:hover{
 nav.desktop-navbar span a{
     text-decoration: none;
     color : inherit;
-    /* color : white; */
+    font-weight: 400;
+    font-size: 80%;
+    text-transform: uppercase;
 }
 #navbar-logo {
     height: 110%;
@@ -42,18 +54,13 @@ nav.mobile-navbar{
     position: fixed;
     top : 0%;
     left : 0%;
-    /* z-index: 10; */
     display: none;
 }
 .burger-container{
     position: absolute;
     top : 10px;
     left : 35px;
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
     transition: all , 0.4s ease;
-    /* justify-content: center; */
 
 }
 .burger-container.close{
@@ -64,28 +71,21 @@ nav.mobile-navbar{
     height : 4px;
     margin : 0 0 5px 0;
     background-color: white;
-    /* margin-top : 5px; */
 }
 .burger-container.close div:nth-child(1){
     transform: rotate(45deg) translate(7px , 5px);
-    /* background-color: red; */
 }
 .burger-container.close div:nth-child(2){
     opacity: 0;
-    /* display: none; */
 }
 .burger-container.close div:nth-child(3){
     transform: rotate(-45deg) translate(7px , -5px);
 }
-/* .burger-container-lines:nth-child(1).close{
-    transform: rotate(45deg);
-    background-color: red;
-} */
 .mobile-navbar-logo{
     position : absolute;
-    width : 30px ;
+    width : 80px ;
     height: 30px;
-    left : 45%;
+    left : 42%;
 }
 .mobile-navbar-logo img{
     max-width: 100%;
@@ -109,7 +109,6 @@ nav.mobile-navbar{
     max-width : 100%;
     color : white;
     display: flex;
-    font-family: 'Lato', sans-serif;
     justify-content: center;
     margin-top : 20px;
     font-size: 120%;

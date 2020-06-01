@@ -142,9 +142,9 @@ footer{
         padding-bottom: 30px;
     }
     .footer-content-social-container-social-icons{
-        flex : 90%;
-        min-width: 90%;
-        max-width: 90%;
+        flex : 95%;
+        min-width: 95%;
+        max-width: 95%;
         margin-top : 20px;
     }
 }

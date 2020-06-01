@@ -67,3 +67,9 @@ module.exports.aboutUs = (req , res)=>{
         title : 'About Us'
     })
 }
+
+module.exports.career = (req,res)=>{
+    return res.render('career' , {
+        title : "Career"
+    })
+}

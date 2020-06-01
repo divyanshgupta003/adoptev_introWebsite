@@ -8,7 +8,9 @@ router.post('/enquiry' , homeController.enquiry);
 router.get('/blog' , homeController.blog);
 router.get('/contactus' , homeController.contactUs);
 router.get('/aboutus' , homeController.aboutUs);
+router.get('/career' , homeController.career);
 
 router.use('/' , homeController.errorPage);
+
 
 module.exports = router;
