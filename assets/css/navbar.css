@@ -30,7 +30,7 @@ nav.desktop-navbar span{
     height: 60%;
     margin : 0 3% 0 3%;
     border : 2px solid transparent;
-    transition: 0.25s ease;
+    /* transition: 0.25s ease; */
 }
 /* nav.desktop-navbar span:hover{
     border-bottom : 2px solid var(--page-color-scheme);
