@@ -32,9 +32,9 @@ nav.desktop-navbar span{
     border : 2px solid transparent;
     transition: 0.25s ease;
 }
-nav.desktop-navbar span:hover{
+/* nav.desktop-navbar span:hover{
     border-bottom : 2px solid var(--page-color-scheme);
-}
+} */
 nav.desktop-navbar span a{
     text-decoration: none;
     color : inherit;
@@ -99,11 +99,13 @@ nav.mobile-navbar{
     display: none;
     position: fixed;
     top :40px;
+    font-family: 'Barlow', sans-serif;;
     left : 0px;
     z-index : 9;
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    padding-bottom: 30px;
 }
 .mobile-navbar-links div{
     max-width : 100%;
@@ -113,6 +115,10 @@ nav.mobile-navbar{
     margin-top : 20px;
     font-size: 120%;
 }
+.mobile-navbar-links div a{
+    text-decoration: none;
+    color: white;
+} 
 
 @media only screen and (max-width: 768px){
     nav.desktop-navbar{

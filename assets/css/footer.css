@@ -2,6 +2,13 @@
 :root {
     --page-color-scheme : #24d824;
 }
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    text-emphasis: none;
+}
 h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding : 0;
@@ -79,6 +86,9 @@ footer{
 .footer-content-social-container-content-links h6{
     font-weight: 400;
 }
+.footer-content-social-container-content-links a{
+    color : white;
+}
 .footer-content-social-container-social-icons{
     flex : 50%;
     max-width: 50%;
@@ -92,6 +102,9 @@ footer{
     justify-content: space-evenly;
     padding: 20px 15%;
 }
+.footer-content-social-container-social-icons-icons a{
+    text-decoration: none;
+}
 .footer-content-social-container-social-icons-icons-element{
     border-radius: 50%;
     background-color: white;
@@ -103,6 +116,7 @@ footer{
     align-items: center;
     font-size: 30px;
     color : #393939;
+    cursor: pointer;
 }
 .footer-copyright-container{
     width: 100%;
@@ -130,6 +144,7 @@ footer{
         justify-content: center;
         align-content: center;
         align-items: center;
+        padding-bottom: 10px;
     }
     .footer-content-social-container-content{
         flex : 90%;
@@ -146,5 +161,8 @@ footer{
         min-width: 95%;
         max-width: 95%;
         margin-top : 20px;
+    }
+    .footer-copyright-container h6{
+        font-size: 80%;
     }
 }
