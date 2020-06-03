@@ -30,23 +30,19 @@ nav.desktop-navbar span{
     height: 60%;
     margin : 0 3% 0 3%;
     border : 2px solid transparent;
-    /* transition: 0.25s ease; */
 }
-/* nav.desktop-navbar span:hover{
-    border-bottom : 2px solid var(--page-color-scheme);
-} */
 nav.desktop-navbar span a{
     text-decoration: none;
     color : inherit;
-    font-weight: 400;
-    font-size: 80%;
+    font-weight: 700;
+    font-size: 90%;
     text-transform: uppercase;
 }
 #navbar-logo {
     height: 110%;
 }
 nav.mobile-navbar{
-    padding: 5px;
+    /* padding: 5px; */
     box-sizing: border-box;
     width: 100vw;
     height : 40px;
@@ -105,7 +101,7 @@ nav.mobile-navbar{
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 }
 .mobile-navbar-links div{
     max-width : 100%;
