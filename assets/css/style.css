@@ -6,18 +6,14 @@ body{
 }
 :root {
     --page-color-scheme : #24d824;
+    --page-background-color : rgb(250, 249, 249);
+    --page-paragraph-color : #373F41;
+    --page-heading-color : #373F41;
   }
 
 h1,h2,h3,h4,h5,h6 { 
     margin: 0;
 }
-.black-color-class{
-    color : black;
-}
-.white-color-class{
-    color:white;
-}
-
 /* -----------------------------fixed-social-icons----------------------------------------------- */
 /* .fixed-social-icons{
     position: fixed;
@@ -45,7 +41,7 @@ h1,h2,h3,h4,h5,h6 {
 /* -------------------------------landing section----------------------------------------------- */
 section.main-section{
     max-width: 100vw;
-    height : 90vh;
+    height : 100vh;
     background: url("../images/home-page-landing-image.jpg");
     background-position: center;
     background-size: cover;
@@ -61,12 +57,14 @@ section.main-section{
 .main-section-main-heading{
     font-size : 300%;
     margin-top : 50px;
-    font-weight: 700;
+    font-weight: 900;
+    text-align: center;
 }
 .main-section-main-tagline{
     font-size: 150%;
     margin-top : 10px;
-    font-weight : 500;
+    font-weight : 600;
+    text-align: center;
 }
 .main-section-main-link{
     font-size: 120%;
@@ -76,489 +74,446 @@ section.main-section{
     text-decoration: none;
     color : blueviolet;
 }
-/* -------------------------------logistics section----------------------------------------------- */
-.logistics{
-    max-width: 100vw;
-    height : 90vh;
-    margin-top: 20px;
-    margin-bottom: 40px;
+@media only screen and (max-width: 520px){
+    section.main-section{
+        height: 80vh;
+    }
+    .main-section-main-heading{
+        font-size: 170%;
+    }
+    .main-section-main-tagline{
+        font-size: 120%;
+    }
 }
-.logistics-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
-    height: 80%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.logistics-container-element-1{
-    flex : 35%;
-    max-width : 35%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.logistics-container-element-2{
-    flex : 35%;
-    max-width : 35%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.logistics-heading{
-    width : 100%;
-    text-align: center;
-    margin: 30px 0 30px 0;
 
-}
-.logistics-heading h3{
-    color : var(--page-color-scheme);
-}
-.logistics-heading h1{
-    font-size : 250%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
-}
 /* -------------------------------Our Services----------------------------------------------- */
-.services{
-    height : 95vh;
+.our-services{
     max-width : 100%;
-    /* background-color: rgb(250, 249, 249); */
-    /* margin-top:30px;
-    margin-bottom: 30px; */
-    padding : 20px 5% 30px 5%;
-    /* justify-content: center; */
+    padding : 40px 7% 20px 7%;
     box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
 }
-.services-heading{
+.our-services-heading{
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     margin : 30px 0 40px 0;
 }
-.services-heading h1{
+.our-services-heading h1{
     font-size : 250%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
+    font-weight: 600;
+    color: var(--page-heading-color);
 }
-.services-heading h3{
+.our-services-heading h3{
+    font-size: 150%;
     color : var(--page-color-scheme);
 }
-.services-provide-container{
-    max-width : 100%;
-    height: 35%;
-    margin-top : 20px;
-    /* background-color: red; */
+.our-services-container{
+    margin-top: 30px;
+    max-width: 100%;
     display: flex;
-    justify-content: space-evenly;
-    /* padding : 20px 0 20px 0; */
-    box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    justify-content: space-around;
 }
-.services-provide-container-element{
-    max-width : 32%;
-    flex : 32%;
-    /* background-color: yellow; */
-    border-right : 1px solid #ebebeb;
-    transition: all, 0.5s ease;
-    border-radius : 2px;
-    display: flex;
-    /* box-shadow: 2px 2px 10px #8888887e; */
-}
-.services-provide-container-element:hover{
-    /* box-shadow: 2px 2px 30px #8888887e; */
-    /* border: none; */
-}
-.services-provide-container-element-icon{
+.our-services-container-element{
     flex : 30%;
     max-width: 30%;
-    display: flex;
-    align-items: flex-start;
-    /* align-content: center; */
-    /* background-color: yellow; */
 }
-.services-provide-container-element-icon img{
-    width : 100%;
-}
-.services-provide-container-element-content{
-    flex : 70%;
-    max-width: 70%;
-    box-sizing: border-box;
-    padding : 10px;
+.our-services-container-element-img{
+    max-width: 100%;
+    height: 80px;
     display: flex;
     justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    /* background-color: red; */
 }
-.services-provide-container-element-content h2{
-    color : var(--page-color-scheme);
+.our-services-container-element-img img{
+    width: 60%;
+    height: 80px;
 }
-.services-provide-container-element-content p{
-    color : #8d8d8d;
-}
-
-/* -------------------------------About Us----------------------------------------------- */
-.about-us{
-    max-width:100%;
-    height: 95vh;
-    /* background-color: yellow; */
-    background-color: rgb(250, 249, 249);
-}
-.about-us-container{
-    max-width : 100%;
-    display: flex;
-    justify-content: center;
-    box-sizing: border-box;
-}
-.about-us-content-section {
-    flex : 45%;
-    max-width: 45%;
-    /* background-color: yellow; */
-    height: 200px;
-    box-sizing: border-box;
-    padding: 100px 3% 100px 3%;
-}
-.about-us-content-section-heading h2{
-    font-size : 200%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
-}
-.about-us-content-section-heading h3{
-    color : var(--page-color-scheme);
-}
-.about-us-content-section-para{
-    margin-top: 40px;
-    max-width: 80%;
-    font-family: 'Lato', sans-serif;
-    color : #8d8d8d;
-}
-.about-us-button-section a{
-    text-decoration: none;
-}
-.about-us-button-section a>button{
-    padding : 10px 20px;
-    cursor: pointer;
-    background-color: var(--page-color-scheme);
-    color : white;
-    font-family: 'Lato', sans-serif;
-}
-.about-us-image-section{
-    flex : 45%;
-    max-width: 45%;
-    box-sizing: border-box;
-    /* background-color: red; */
-    position: relative;
-    height: 90vh;
-}
-.about-us-image-section-img{
-    position: absolute;
-    transform: translate(-50% , -50%);
-    left: 50%;
-    top:50%;
-    height: 45vh;
-    /* width : 10vw; */
-}
-.about-us-image-section-img::after{
-    content: '';
-    position: absolute;
-    width: 95%;
-    height: 80%;
-    /* background-color: lightgrey; */
-    border : 8px solid black;
-    top: -7%;
-    /* border-radius: 50%; */
-    z-index: -1;
-    right: -5%;
-}
-/* ---------------------------------------Blog-Posts------------------------------------------ */
-.blog-posts-heading{
-    width : 100%;
+.our-services-container-element-heading{
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin-top: 30px;
+}
+.our-services-container-element-heading h4{
+    font-weight: 550;
+}
+.our-services-container-element-content{
+    text-align: justify;
+    margin-top: 20px;
+    color: var(--page-paragraph-color);
+    font-size: 110%;
+}
 
+@media only screen and (max-width: 768px){
+    .our-services-heading{
+        text-align: center;
+    }
+    .our-services-heading h3{
+        font-size: 130%;
+    }
+    .our-services-heading h1{
+        font-size: 200%;
+    }
+    .our-services-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .our-services-container-element{
+        flex : 80%;
+        max-width: 80%;
+        min-width: 80%;
+    }
+    .our-services-container-element-img img{
+        height: 100px;
+    }
+    .our-services-container-element-heading h4{
+        font-size: 130%;
+    }
 }
-.blog-posts-heading h3{
-    color : var(--page-color-scheme);
+@media only screen and (max-width: 520px){
+    .our-services-container-element-img img{
+        height: 90px;
+    }
 }
-.blog-posts-heading h1{
-    font-size : 250%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
-}
-.blog-posts-container{
-    max-width : 100%;
-    display: flex;
-    height: 70vh;
-    /* background-color: yellow; */
-    justify-content: center;
-}
-.blog-posts-carousel-wrapper *{
-    box-sizing: border-box;
-}
-.blog-posts-carousel-wrapper{
-    overflow: hidden;
-    /* background-color: red; */
-    width : 90%;
-    height: 100%;
-}
-.blog-posts-carousel{
-    transform-style: preserve-3d;
-    height: 100%;
-}
-.carousel__photo {
-    opacity: 0;
-    position: absolute;
-    top:0;
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    padding: 1rem 4rem;
-    z-index: 100;
-    /* background-color: red; */
-    transition: transform .5s, opacity .5s, z-index .5s;
-    display: flex;
-    justify-content: center;
-  }
-.carousel__photo.initial,
-.carousel__photo.active {
-  opacity: 1;
-  position: relative;
-  z-index: 900;
-}
-.carousel__photo.prev,
-.carousel__photo.next {
-  z-index: 800;
-}
-.carousel__photo.prev {
-  transform: translateX(-100%); /* Move 'prev' item to the left */
-}
-.carousel__photo.next {
-  transform: translateX(100%); /* Move 'next' item to the right */
-}
-.carousel__button--prev,
-.carousel__button--next {
-  position: absolute;
-  top:50%;
-  width: 3rem;
-  height: 3rem;
-  background-color: #FFF;
-  transform: translateY(-50%);
-  border-radius: 50%;
-  cursor: pointer; 
-  z-index: 1001;      /* Sit on top of everything */
-  border: 1px solid black;
-}
-.carousel__button--prev {
-    left:0;
-  }
-  .carousel__button--next {
-    right:0;
-  }
-  .carousel__button--prev::after,
-  .carousel__button--next::after {
-    content: " ";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 50%;
-    left: 54%;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    transform: translate(-50%, -50%) rotate(135deg);
-  }
-  .carousel__button--next::after {
-    left: 47%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-  }
-  .carousel__photo_element{
-      flex : 45%;
-      max-width : 45%;
-      background-color: yellow;
-      margin-left : 20px;
-  }
 
+/* ---------------------fleet partner us---------------------- */
 
-/* ---------------------------------------hire-vehicle---------------------------------------- */
-/* .hire-vehicle{
+.fleet-partner-us{
     max-width: 100vw;
-    height : 90vh;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    background-color: rgb(250, 249, 249);
-    padding-top : 20px;
+    padding: 110px 7% 110px 7%;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
 }
-.hire-vehicle-container{
-    margin-top: 20px;
-    margin-bottom: 20px;
+.fleet-partner-us-heading{
     width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: space-evenly;
-}
-.hire-vehicle-container-element-1{
-    flex : 30%;
-    max-width : 30%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.hire-vehicle-container-element-2{
-    flex : 30%;
-    max-width : 30%;
-    box-sizing: border-box;
-    border: 1px solid #f0f0f0;
-    background-color: #f0f0f00c;
-    box-shadow: 10px 10px 8px #8888887e;
-}
-.hire-vehicle-heading{
-    width : 100%;
+    display: none;
     text-align: center;
     margin : 30px 0 40px 0;
 }
-.hire-vehicle-heading h3{
-    color : var(--page-color-scheme);
-}
-.hire-vehicle-heading h1{
-    font-size : 250%;
-    font-family: 'Lato', sans-serif;
-    font-weight: 900;
-    color: #353535;
-} */
-/* ---------------------------------------partner-us---------------------------------------- */
-.station-partner-us{
-    max-width : 100%;
-    height: 70vh;
-}
-.station-partner-us *{
-    box-sizing: border-box;
-}
-.station-partner-us-container{
-    max-width: 100%;
-    height: 100%;
-    /* background-color: red; */
-    padding-top : 20px;
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: center;
-}
-.station-partner-us-photo-part{
-    flex : 40%;
-    max-width: 40%;
-    height: 100%;
-    /* background : url('../images/200000-more-electric-vehicle-charging-stations-planned-in-next-4-years-e1528900251291.jpg');
-    background-repeat: no-repeat;
-    background-position: center; */
-}
-.station-partner-us-photo-part img{
-    max-width: 100%;
-    height: 100%;
-}
-.station-partner-us-content-part{
-    flex : 50%;
-    max-width: 50%;
-    padding : 30px 3%;
-}
-.station-partner-us-content-part h3{
-    color : var(--page-color-scheme);
-    font-weight: 400;
-}
-.station-partner-us-content-part h2{
-    font-size: 250%;
+.fleet-partner-us-heading h1{
+    font-size: 200%;
+    /* font-size : 20%; */
+    /* margin-top: 15px; */
     font-weight: 600;
+    color: var(--page-heading-color);
 }
-.station-partner-us-content-part p{
-    margin-top : 40px;
-    font-size: 120%;
-    color: #9ea3ab;
-    font-weight: 400;
+.fleet-partner-us-heading h3{
+    font-size: 130%;
+    color : var(--page-color-scheme);
 }
-.station-partner-us-content-part-button-section a{
-    text-decoration: none;
-    font-weight: 400;
-}
-.station-partner-us-content-part-button-section a>button{
-    margin-top : 30px;
-    padding : 10px 20px;
-    cursor: pointer;
-    background-color: var(--page-color-scheme);
-    color : white;
-    font-family: 'Lato', sans-serif;
-    border : none;
-}
-/* --------------------------------driver partner with us--------------------------------- */
-.driver-partner-us{
-    max-width : 100%;
-    height: 70vh;
-    background-color: rgba(151, 255, 151, 0.856);
-    color :white;
-}
-.driver-partner-us *{
-    box-sizing: border-box;
-}
-.driver-partner-us-container{
+.fleet-partner-us-container{
     max-width: 100%;
-    height: 100%;
-    /* background-color: red; */
-    padding-top : 20px;
-    padding-bottom: 20px;
     display: flex;
     justify-content: center;
 }
-.driver-partner-us-photo-part{
-    flex : 40%;
-    max-width: 40%;
-    height: 100%;
-    /* background : url('../images/200000-more-electric-vehicle-charging-drivers-planned-in-next-4-years-e1528900251291.jpg');
-    background-repeat: no-repeat;
-    background-position: center; */
-}
-.driver-partner-us-photo-part img{
-    max-width: 100%;
-    height: 100%;
-}
-.driver-partner-us-content-part{
+.fleet-partner-us-container-content-part{
     flex : 50%;
     max-width: 50%;
-    padding : 30px 3%;
+    padding: 0 2%;
+    box-sizing: border-box;
 }
-.driver-partner-us-content-part h3{
-    /* color : var(--page-color-scheme); */
+.fleet-partner-us-container-content-part-heading{
+    width: 100%;
+}
+.fleet-partner-us-container-content-part-heading h3{
+    color: var(--page-color-scheme);
     font-weight: 500;
+    font-size: 150%;
 }
-.driver-partner-us-content-part h2{
-    font-size: 250%;
+.fleet-partner-us-container-content-part-heading h2{
+    color : var(--page-heading-color);
     font-weight: 600;
+    margin-top : 10px;
 }
-.driver-partner-us-content-part p{
-    margin-top : 40px;
-    font-size: 120%;
-    font-weight: 400;
-    color: #373F41;
+.fleet-partner-us-container-content-part-content{
+    color : var(--page-paragraph-color);
+    margin-top: 50px;
+    font-size : 110%;
+    text-align: justify;
 }
-.driver-partner-us-content-part-button-section a{
-    text-decoration: none;
+.fleet-partner-us-container-content-part-button{
+    width: 100%;
+    margin-top: 60px;
 }
-.driver-partner-us-content-part-button-section a>button{
-    margin-top : 30px;
+.fleet-partner-us-container-content-part-button button{
     padding : 10px 20px;
+    box-sizing: border-box;
     cursor: pointer;
     background-color: var(--page-color-scheme);
     color : white;
-    font-family: 'Lato', sans-serif;
-    border : none;
+    outline: none;
+    border: none;
+}
+.fleet-partner-us-container-img-part{
+    flex : 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fleet-partner-us-container-img-part img{
+    width: 80%;
+    height: 350px;
 }
 
+@media only screen and (max-width: 768px){
+    .fleet-partner-us{
+        padding: 50px 7% 50px 7%;
+    }
+    .fleet-partner-us-heading{
+        display: block;
+        padding-bottom: 30px;
+    }
+    .fleet-partner-us-container-content-part-heading{
+        display: none;
+    }
+    .fleet-partner-us-container{
+        flex-direction: column-reverse;
+    }
+    .fleet-partner-us-container-content-part{
+        flex : 90%;
+        max-width: 90%;
+    }
+    .fleet-partner-us-container-img-part{
+        flex : 100%;
+        max-width: 100%;
+    }
+    .fleet-partner-us-container-img-part img{
+        width: 90%;
+        /* height: 200px; */
+    }
+}
+@media only screen and (max-width: 520px){
+    .fleet-partner-us-container-img-part img{
+        width: 90%;
+        height: 200px;
+    }
+}
 
+/* --------------------- charge-partner-us ---------------------- */
+
+.charge-partner-us{
+    max-width: 100vw;
+    padding: 110px 7% 110px 7%;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+    background-color: var(--page-background-color);
+}
+.charge-partner-us-heading{
+    width: 100%;
+    display: none;
+    text-align: center;
+    margin : 30px 0 40px 0;
+}
+.charge-partner-us-heading h1{
+    font-size: 200%;
+    /* font-size : 20%; */
+    font-weight: 600;
+    color: var(--page-heading-color);
+}
+.charge-partner-us-heading h3{
+    font-size: 130%;
+    color : var(--page-color-scheme);
+}
+.charge-partner-us-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.charge-partner-us-container-content-part{
+    flex : 50%;
+    max-width: 50%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.charge-partner-us-container-content-part-heading{
+    width: 100%;
+}
+.charge-partner-us-container-content-part-heading h3{
+    color: var(--page-color-scheme);
+    font-weight: 500;
+    font-size: 150%;
+}
+.charge-partner-us-container-content-part-heading h2{
+    color : var(--page-heading-color);
+    font-weight: 600;
+    margin-top : 10px;
+}
+.charge-partner-us-container-content-part-content{
+    color : var(--page-paragraph-color);
+    margin-top: 50px;
+    font-size : 110%;
+    text-align: justify;
+}
+.charge-partner-us-container-content-part-button{
+    width: 100%;
+    margin-top: 60px;
+}
+.charge-partner-us-container-content-part-button button{
+    padding : 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--page-color-scheme);
+    color : white;
+    outline: none;
+    border: none;
+}
+.charge-partner-us-container-img-part{
+    flex : 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.charge-partner-us-container-img-part img{
+    width: 80%;
+    height: 350px;
+}
+
+@media only screen and (max-width: 768px){
+    .charge-partner-us{
+        padding: 50px 7% 50px 7%;
+    }
+    .charge-partner-us-heading{
+        display: block;
+        padding-bottom: 30px;
+    }
+    .charge-partner-us-container-content-part-heading{
+        display: none;
+    }
+    .charge-partner-us-container{
+        flex-direction: column;
+    }
+    .charge-partner-us-container-content-part{
+        flex : 90%;
+        max-width: 90%;
+    }
+    .charge-partner-us-container-img-part{
+        flex : 100%;
+        max-width: 100%;
+    }
+    .charge-partner-us-container-img-part img{
+        width: 90%;
+        /* height: 200px; */
+    }
+}
+@media only screen and (max-width: 520px){
+    .charge-partner-us-container-img-part img{
+        width: 90%;
+        height: 200px;
+    }
+}
+
+/* ---------------------drive-with-us---------------------- */
+
+.drive-with-us{
+    max-width: 100vw;
+    padding: 110px 7% 110px 7%;
+    font-family: 'Barlow', sans-serif;
+    box-sizing: border-box;
+}
+.drive-with-us-heading{
+    width: 100%;
+    display: none;
+    text-align: center;
+    margin : 30px 0 40px 0;
+}
+.drive-with-us-heading h1{
+    font-size: 200%;
+    /* font-size : 20%; */
+    font-weight: 600;
+    color: var(--page-heading-color);
+}
+.drive-with-us-heading h3{
+    font-size: 130%;
+    color : var(--page-color-scheme);
+}
+.drive-with-us-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.drive-with-us-container-content-part{
+    flex : 50%;
+    max-width: 50%;
+    padding: 0 2%;
+    box-sizing: border-box;
+}
+.drive-with-us-container-content-part-heading{
+    width: 100%;
+}
+.drive-with-us-container-content-part-heading h3{
+    color: var(--page-color-scheme);
+    font-weight: 500;
+    font-size: 150%;
+}
+.drive-with-us-container-content-part-heading h2{
+    color : var(--page-heading-color);
+    font-weight: 600;
+    margin-top: 10px;
+}
+.drive-with-us-container-content-part-content{
+    color : var(--page-paragraph-color);
+    margin-top: 50px;
+    font-size : 110%;
+    text-align: justify;
+}
+.drive-with-us-container-content-part-button{
+    width: 100%;
+    margin-top: 60px;
+}
+.drive-with-us-container-content-part-button button{
+    padding : 10px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    background-color: var(--page-color-scheme);
+    color : white;
+    outline: none;
+    border: none;
+}
+.drive-with-us-container-img-part{
+    flex : 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drive-with-us-container-img-part img{
+    width: 80%;
+    height: 350px;
+}
+
+@media only screen and (max-width: 768px){
+    .drive-with-us{
+        padding: 50px 7% 50px 7%;
+    }
+    .drive-with-us-heading{
+        display: block;
+        padding-bottom: 30px;
+    }
+    .drive-with-us-container-content-part-heading{
+        display: none;
+    }
+    .drive-with-us-container{
+        flex-direction: column-reverse;
+    }
+    .drive-with-us-container-content-part{
+        flex : 90%;
+        max-width: 90%;
+    }
+    .drive-with-us-container-img-part{
+        flex : 100%;
+        max-width: 100%;
+    }
+    .drive-with-us-container-img-part img{
+        width: 90%;
+        /* height: 200px; */
+    }
+}
+@media only screen and (max-width: 520px){
+    .drive-with-us-container-img-part img{
+        width: 90%;
+        height: 200px;
+    }
+}
 
 /* -------------------------------Media Query----------------------------------------------- */
 
-@media only screen and (max-width: 520px){
-    
-}
