@@ -20,6 +20,14 @@ body{
     font-weight: 800;
     text-transform: uppercase;
 }
+@media only screen and (max-width: 520px){
+    .about-us-landing h1{
+        width: 100%;
+        text-align: center;
+        font-size: 190%;
+
+    }
+}
 
 /* ----------------------mission and vision --------------- */
 .about-us-mission-vision{
@@ -29,7 +37,7 @@ body{
     color : white;
 }
 .about-us-mission-vision-heading{
-    width: 100%;
+    max-width: 100%;
 }
 .about-us-mission-vision-heading h1{
     font-weight: 600;
@@ -66,6 +74,51 @@ body{
     margin-top : 20px;
     text-align: justify;
 }
+
+@media only screen and (max-width: 520px){
+    .about-us-mission-vision-heading{
+        text-align: center;
+    }
+    .about-us-mission-vision-heading h1{
+        font-size: 170%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .about-us-mission-vision-tagline{
+        max-width: 100%;
+        text-align: justify;
+    }
+    .about-us-mission-vision-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .about-us-our-team-tagline{
+        width : 95%;
+        text-align: justify;
+    }
+    .about-us-mission-vision-container-element{
+        max-width: 90%;
+        flex:90%;
+    }
+    .about-us-our-team-heading{
+        font-size: 160%;
+        text-align: center;
+    }
+    .about-us-our-team-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-us-our-team-container-element{
+        min-width: 70%;
+        max-width: 70%;
+        flex: 70%;
+        margin-top: 50px;
+    }
+}
+
 
 /* ----------------------Our Team----------------- */
 .about-us-our-team{
@@ -119,6 +172,3 @@ body{
     margin-top: 20px;
 }
 
-@media only screen and (max-width: 520px){
-    
-}
