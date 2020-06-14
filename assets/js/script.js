@@ -68,10 +68,11 @@ const scrollToTopIcon = document.getElementsByClassName('scroll-to-top')[0];
 // console.log(mainSectionDiv);
 document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
 window.addEventListener('scroll' ,  () => {
-    var distFromBottomRect = mainSectionDiv.getBoundingClientRect();
-    var distFromBottom = distFromBottomRect.bottom;
+    let distFromBottomRect = mainSectionDiv.getBoundingClientRect();
+    let distFromBottom = distFromBottomRect.bottom;
+    
     // console.log(distFromBottom);
-    if(distFromBottom <= '200'){
+    if(distFromBottom <= '400'){
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         scrollToTopIcon.style.display = "flex";
