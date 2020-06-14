@@ -123,6 +123,23 @@ footer{
     text-align: center;
 }
 
+.scroll-to-top{
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 30px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 57, 57 , 0.95);
+}
+.scroll-to-top i{
+    color: white;
+    font-size: 130%;
+}
+
 @media only screen and (max-width: 768px){
     .footer-heading-app-container{
         flex-direction: column;
@@ -166,3 +183,4 @@ footer{
         font-size: 80%;
     }
 }
+

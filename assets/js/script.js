@@ -39,18 +39,32 @@ burgerContainer.addEventListener('click' , toggleMenu);
 function toggleMenu(){
     if(burgerOpen){
         burgerContainer.classList.add('close');
-        mobileNavbarLinks.style.height = '50%';
+        mobileNavbarLinks.style.height = '250px';
+        // mobileNavbarLinks.style.animationName = "navbarOpenAnimation";
         burgerOpen = false;
     }else{
         burgerContainer.classList.remove('close');
         mobileNavbarLinks.style.height = '0px';
+        // mobileNavbarLinks.style.animationName = "";
         burgerOpen = true;
     }
 }
+
+// ---------------------scroll to top-------------------
+
+scrollToTop = ()=>{
+    window.scroll({
+        top: 0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+}
+
 // ----------------------------------------------------------------------------------------
 
 // ---------------------changing the color of navbar on scroll--------------------------
 const mainSectionDiv = document.getElementsByClassName('navbar-color-change-div')[0];
+const scrollToTopIcon = document.getElementsByClassName('scroll-to-top')[0];
 // console.log(mainSectionDiv);
 document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
 window.addEventListener('scroll' ,  () => {
@@ -60,9 +74,11 @@ window.addEventListener('scroll' ,  () => {
     if(distFromBottom <= '200'){
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
+        scrollToTopIcon.style.display = "flex";
     }else{
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
+        scrollToTopIcon.style.display = "none";
     }
 });
 
