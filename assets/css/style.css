@@ -300,9 +300,35 @@ section.main-section{
 }
 
 @media only screen and (max-width: 768px){
-    
+    .main-page-logistics-heading{
+        font-size: 80%;
+    }
+    .main-page-logistics-container{
+        height : 500px;
+    }
+    .main-page-logistics-container::after{
+        height: 500px;
+    }
+    .main-page-logistics-inside-container{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+    }
+    .main-page-logistics-inside-container-small-immge-container{
+        height: 200px;
+        min-width: 90%;
+        max-width: 90%;
+        flex: 90%;
+    }
+    .main-page-logistics-inside-container-content{
+        width: 100%;
+        flex : 100%;
+    }
+    .main-page-logistics-inside-container-content-paragraph{
+        width: 90%;
+    }
 }
-
-
-/* -------------------------------Media Query----------------------------------------------- */
 

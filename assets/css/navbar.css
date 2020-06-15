@@ -10,6 +10,9 @@ body{
 }
 :root {
     --page-color-scheme : #24d824;
+    --page-background-color : rgb(250, 249, 249);
+    --page-paragraph-color : #373F41;
+    --page-heading-color : #373F41;
   }
 
 h1,h2,h3,h4,h5,h6 { 
@@ -49,6 +52,14 @@ nav.desktop-navbar{
 {
     color: white;
 } 
+@keyframes changeNavbarDesignColor {
+    from {
+        color: white;
+    }
+    to {
+        color: var(--page-heading-color);
+    }
+}
 #navbar-logo {
     height: 80%;
 }

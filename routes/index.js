@@ -10,6 +10,7 @@ router.get('/contactus' , homeController.contactUs);
 router.get('/aboutus' , homeController.aboutUs);
 router.get('/career' , homeController.career);
 router.get('/partnerus' , homeController.partner);
+router.get('/enterprise' , homeController.enterprise);
 
 router.use('/' , homeController.errorPage);
 

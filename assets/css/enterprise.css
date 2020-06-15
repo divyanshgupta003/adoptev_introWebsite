@@ -1,0 +1,185 @@
+html { 
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin : 0;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+:root {
+    --page-color-scheme : #24d824;
+    --page-background-color : rgb(250, 249, 249);
+    --page-paragraph-color : #373F41;
+    --page-heading-color : #373F41;
+  }
+
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+}   
+
+.enterprise-landing-section{
+    width: 100%;
+    height: 80vh;
+    background: url('../images/about-us-image.jpg');
+    background-size: cover;
+}
+
+.enterprise-landing-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left : 0;
+    width: 100%;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.enterprise-landing-section-heading{
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left : 50%;
+    top: 40%;
+    color: white;
+}
+.enterprise-landing-section-heading strong{
+    color: var(--page-color-scheme);
+}
+
+.enterprise-landing-section-heading h1{
+    font-weight: 600;
+}
+/* ----------------about us--------------------- */
+.enterprise-about-us{
+    /* height: 70vh; */
+    width: 100%;
+    padding: 50px 7%;
+    background-color: var(--page-background-color);
+}
+.enterprise-about-us-heading{
+    width: 100%;
+    text-align: center;
+}
+.enterprise-about-us-heading h2{
+    font-weight: 600;
+}
+.enterprise-about-us-heading strong{
+    color: var(--page-color-scheme);
+}
+.enterprise-about-us-container{
+    width: 100%;
+    display: flex;
+    margin-top: 40px;
+}
+.enterprise-about-us-container-paragraph{
+    flex:55%;
+    max-width: 55%;
+    font-size: 120%;
+}
+/* --------------points and form----------------------- */
+.enterprise-several-points-and-form{
+    width: 100%;
+    padding: 40px 7%;
+}
+.enterprise-several-points-and-form-container{
+    width: 100%;
+    display: flex;
+}
+.enterprise-several-points-and-form-container-points-element{
+    max-width: 60%;
+    flex: 60%;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element{
+    max-width: 50%;
+    flex: 50%;
+    box-sizing: border-box;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element-image{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element-image img{
+    max-width: 55%;
+    height: 100px;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element-content{
+    width: 100%;
+    padding: 20px 10%;
+    text-align: center;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element-content h4{
+    font-size: 120%;
+    font-weight: 500;
+}
+.enterprise-several-points-and-form-container-points-element-internal-element-content p{
+    margin-top: 20px;
+    font-weight: 400;
+    text-align: justify;
+}
+.enterprise-several-points-and-form-container-form-element{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer{
+    width: 90%;
+    height: 500px;
+    margin-top: -200px;
+    box-sizing: border-box;
+    padding: 30px 5%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.97);
+    color : white;
+}
+
+.enterprise-several-points-and-form-container-form-element-inner-sontainer form{
+    width: 100%;
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer h3{
+    font-weight: 600;
+    color: var(--page-color-scheme);
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer h6{
+    margin-top: 5px;
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type= text] , [type=email] , [type=number]{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-bottom: 4px solid transparent;
+    transition: 0.3s ease;
+    perspective: 200px;
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type= text]:focus , [type=email]:focus , [type=number]:focus , select:focus{
+    border-bottom: 4px solid var(--page-color-scheme);
+}
+.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type=submit]{
+    width: 100%;
+    margin-top: 25px;
+    padding: 10px;
+    color: white;
+    background-color: var(--page-color-scheme);
+    outline: none;
+    border: none;
+}
+@media only screen and (max-width: 768px){
+    .enterprise-about-us-container-paragraph{
+        width: 90%;
+        flex : 90%;
+    }
+}

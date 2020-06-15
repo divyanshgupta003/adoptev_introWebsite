@@ -79,3 +79,9 @@ module.exports.partner = (req,res)=>{
         title : "Partner Us"
     })
 }
+
+module.exports.enterprise = (req,res)=>{
+    return res.render('enterprise' , {
+        title : "Our Enterprise"
+    })
+}
