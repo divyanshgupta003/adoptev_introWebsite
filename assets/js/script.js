@@ -39,7 +39,7 @@ burgerContainer.addEventListener('click' , toggleMenu);
 function toggleMenu(){
     if(burgerOpen){
         burgerContainer.classList.add('close');
-        mobileNavbarLinks.style.height = '250px';
+        mobileNavbarLinks.style.height = '270px';
         // mobileNavbarLinks.style.animationName = "navbarOpenAnimation";
         burgerOpen = false;
     }else{

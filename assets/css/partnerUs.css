@@ -17,11 +17,12 @@ h1,h2,h3,h4,h5,h6 {
 /* -----------------landing section--------------- */
 .partner-us-landing{
     width: 100vw;
-    height: 60vh;
+    height: 70vh;
     background : linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2 )), 
-                 url('../images/240_F_185071010_hjktoUnGBX5GIiT3dDdD5PHESlTqNt9v.jpg');
+                 url('../images/about-us-image.jpg');
     background-attachment: fixed;
     background-size: contain;
+    background-repeat: no-repeat;
     background-position: top;
     /* filter: blur(2px);
     z-index: -1; */
