@@ -9,7 +9,7 @@ body{
     font-family: 'Barlow', sans-serif;
 }
 :root {
-    --page-color-scheme : #24d824;
+    --page-color-scheme : #76c04d;
     --page-background-color : rgb(250, 249, 249);
     --page-paragraph-color : #373F41;
     --page-heading-color : #373F41;
@@ -64,6 +64,13 @@ nav.desktop-navbar{
     to {
         color: var(--page-heading-color);
     }
+}
+.desktop-navbar-links span button{
+    background-color: var(--page-color-scheme);
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    border: none;
 }
 #navbar-logo {
     height: 80%;

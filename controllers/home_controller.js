@@ -1,4 +1,4 @@
-const Customer = require('../models/Customer');
+const customerContact = require('../models/customerContact');
 const request = require('request');
 const axios = require('axios');
 
@@ -17,7 +17,7 @@ module.exports.errorPage = async (req , res) => {
 
 module.exports.enquiry = async (req,res) =>{
     try{
-        let newEnquiry = await Customer.create({
+        let newEnquiry = await customerContact.create({
             name : req.body.name,
             email : req.body.email,
             phone : req.body.phone,

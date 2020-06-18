@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+<section class="dashboard-landing-section navbar-color-change-div">
+
+</section>
+
+<form action="/logistics/push-request" method="post">
+    <input type="text" name="startingAddress" id="" placeholder="Your Pickup Address" required>
+    <input type="text" name="designationAddress" id="" placeholder="Your Drop Address" required>
+    <input type="text" name="load" id="" placeholder="Your Load weight in KGs" required>
+    <input type="submit" value="Ask for the price!!">
+</form>
+
+<br><br><br><br><br>
+
+<%for(request of requests){%>
+    <%if(request.price){%>
+        <ul>
+            <li><%=request.price%></li>
+            <form action="/logistics/request" method="post">
+                <input type="text" value="<%=request.id%>" name="requestId" id="" hidden>
+                <input type="submit" formaction="/logistics/accept-request" value="Accept">
+                <input type="submit" formaction="/logistics/reject-request" value="Reject">
+            </form>
+        </ul>
+    <%}%>
+<%}%>

@@ -1,0 +1,18 @@
+<br><br><br><br>
+    <%for(request of allRequests){%>
+        <%if(!request.price){%>
+<div style="margin : 50px 0px 50px 0 ">
+        <ul>
+            <form action="/logistics/admin/send-price" method="post">
+                <li><%=request.customer.name%></li>
+                <li><%=request.startingAddress%></li>
+                <li><%=request.designationAddress%></li>
+                <li><%=request.load%></li>
+                <input type="text" name="requestId" value="<%=request._id%>" id="" hidden>
+                <input type="text" name="price" id="" placeholder="Enter the price">
+                <input type="submit" value="Send it to the company!!">
+            </form>
+        </ul>
+</div>
+<%}%>
+<%}%>

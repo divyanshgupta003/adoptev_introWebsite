@@ -4,6 +4,8 @@ const router = express.Router();
 const homeController = require('../controllers/home_controller');
 
 router.get('/' , homeController.homePage);
+router.use('/users' , require('./users'));
+router.use('/logistics' , require('./logistics'));
 router.post('/enquiry' , homeController.enquiry);
 router.get('/blog' , homeController.blog);
 router.get('/contactus' , homeController.contactUs);
