@@ -23,7 +23,7 @@ footer{
 .footer-heading-app-container{
     display: flex;
     max-width : 100%;
-    justify-content: center;
+    /* justify-content: center; */
     align-content: center;
     align-items: center;
     border-bottom: .5px solid rgb(71, 71, 71);
@@ -34,6 +34,8 @@ footer{
     max-width : 45%;
     flex: 45%;
     color: var(--page-color-scheme);
+    box-sizing: border-box;
+    padding-left: 70px;
 }
 .footer-heading-app-container-heading-element img{
     width: 150px;

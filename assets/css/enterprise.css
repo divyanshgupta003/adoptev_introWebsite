@@ -2,6 +2,8 @@ html {
     scroll-behavior: smooth;
 }
 body{
+    background: url('/images/bg-02.png');
+    background-size: contain;
     padding: 0;
     margin : 0;
     overflow-x: hidden;
@@ -17,11 +19,13 @@ body{
 h1,h2,h3,h4,h5,h6 { 
     margin: 0;
 }   
-
+#enterprise{
+    color: var(--page-color-scheme);
+}
 .enterprise-landing-section{
-    width: 100%;
+    max-width: 100vw;
     height: 80vh;
-    background: url('../images/about-us-image.jpg');
+    background: transparent;
     background-size: cover;
 }
 
@@ -32,16 +36,38 @@ h1,h2,h3,h4,h5,h6 {
     left : 0;
     width: 100%;
     height: 80vh;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.1);
     z-index: 1;
+}
+.enterprise-landing-section-container{
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+}
+.enterprise-landing-section-image-container{
+    flex: 55%;
+    max-width: 55%;
+    padding-top: 90px;
+    box-sizing: border-box;
+}
+.enterprise-landing-section-image-container img{
+    width: 100%;
+}
+.enterprise-landing-section-heading-container{
+    flex: 45%;
+    max-width: 45%;
+    position: relative;
 }
 .enterprise-landing-section-heading{
     z-index: 2;
     position: absolute;
     transform: translate(-50%,-50%);
     left : 50%;
-    top: 40%;
-    color: white;
+    top: 50%;
 }
 .enterprise-landing-section-heading strong{
     color: var(--page-color-scheme);
@@ -50,22 +76,37 @@ h1,h2,h3,h4,h5,h6 {
 .enterprise-landing-section-heading h1{
     font-weight: 600;
 }
+@media only screen and (max-width: 768px){
+    .enterprise-landing-section-container{
+        flex-direction: column-reverse;
+    }
+    .enterprise-landing-section-image-container{
+        max-width: 90%;
+        flex : 90%;
+        padding-top: 40px;
+    }
+    .enterprise-landing-section-heading-container{
+        max-width: 90%;
+        flex: 90%;
+    }
+    .enterprise-landing-section-heading{
+        top: 70%;
+    }
+}
 /* ----------------about us--------------------- */
 .enterprise-about-us{
     /* height: 70vh; */
-    width: 100%;
+    max-width: 100vw;
     padding: 50px 7%;
-    background-color: var(--page-background-color);
+    background-color: rgb(250, 249, 249 , 0.3)
 }
 .enterprise-about-us-heading{
     width: 100%;
     text-align: center;
 }
 .enterprise-about-us-heading h2{
-    font-weight: 600;
-}
-.enterprise-about-us-heading strong{
-    color: var(--page-color-scheme);
+    font-weight: 700;
+    font-size: 200%;
 }
 .enterprise-about-us-container{
     width: 100%;
@@ -73,148 +114,173 @@ h1,h2,h3,h4,h5,h6 {
     margin-top: 40px;
 }
 .enterprise-about-us-container-paragraph{
-    flex:55%;
-    max-width: 55%;
-    font-size: 120%;
+    flex:90%;
+    max-width: 90%;
+    font-size: 110%;
 }
-/* --------------points and form----------------------- */
-.enterprise-several-points-and-form{
-    width: 100%;
-    padding: 40px 7%;
-}
-.enterprise-several-points-and-form-container{
-    width: 100%;
-    display: flex;
-}
-.enterprise-several-points-and-form-container-points-element{
-    max-width: 60%;
-    flex: 60%;
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element{
-    max-width: 50%;
-    flex: 50%;
-    box-sizing: border-box;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element-image{
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element-image img{
-    max-width: 55%;
-    height: 100px;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element-content{
-    width: 100%;
-    padding: 20px 10%;
-    text-align: center;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element-content h4{
-    font-size: 120%;
-    font-weight: 500;
-}
-.enterprise-several-points-and-form-container-points-element-internal-element-content p{
-    margin-top: 20px;
-    font-weight: 400;
-    text-align: justify;
-}
-.enterprise-several-points-and-form-container-form-element{
-    width: 40%;
-    display: flex;
-    justify-content: center;
-}
-.enterprise-several-points-and-form-container-form-element-inner-sontainer{
-    width: 90%;
-    height: 520px;
-    margin-top: -200px;
-    box-sizing: border-box;
-    padding: 30px 5%;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.97);
-    color : white;
-}
+/* --------------Enterprises----------------------- */
 
-.enterprise-several-points-and-form-container-form-element-inner-sontainer form{
-    width: 100%;
+.adoptev-enterprise{
+    max-width: 100vw;
+    padding: 20px 7%;
 }
-.enterprise-several-points-and-form-container-form-element-inner-sontainer h3{
-    font-weight: 600;
+.adoptev-enterprise-heading{
+    width: 100%;
+    text-align: center;
+}
+.adoptev-enterprise-heading h2{
+    font-weight: 700;
+}
+.adoptev-enterprise-heading strong{
     color: var(--page-color-scheme);
 }
-.enterprise-several-points-and-form-container-form-element-inner-sontainer h6{
-    margin-top: 5px;
-}
-.enterprise-several-points-and-form-container-form-element-inner-sontainer form select{
+.adoptev-enterprise-point-container{
     width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    outline: none;
-    border: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
 }
-.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type= text] , [type=email] , [type=number]{
-    width: 100%;
-    padding: 10px;
-    margin-top: 20px;
-    outline: none;
-    border: none;
-    border-bottom: 4px solid transparent;
-    transition: 0.3s ease;
-    perspective: 200px;
+.adoptev-enterprise-point-image-container{
+    max-width: 40%;
+    flex: 40%;
+    display: flex;
+    justify-content: center;
 }
-.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type= text]:focus , [type=email]:focus , [type=number]:focus , select:focus{
-    border-bottom: 4px solid var(--page-color-scheme);
+.adoptev-enterprise-point-image-container img{
+    width: 45%;
 }
-.enterprise-several-points-and-form-container-form-element-inner-sontainer form [type=submit]{
-    width: 100%;
-    margin-top: 25px;
-    padding: 10px;
-    color: white;
-    background-color: var(--page-color-scheme);
-    outline: none;
-    border: none;
+
+.adoptev-enterprise-point-content-container{
+    max-width: 40%;
+    flex: 40%;
+}
+.adoptev-enterprise-point-content-container h6{
+    color: var(--page-color-scheme);
+    margin: 10px 0;
+    font-size: 110%;
+}
+.adoptev-enterprise-point-content-container li{
+    font-size: 110%;
 }
 @media only screen and (max-width: 768px){
-    .enterprise-about-us-heading h2{
-        font-size: 170%;
-    }
-    .enterprise-about-us-container-paragraph{
-        max-width: 100%;
-        flex : 100%;
-        text-align: justify;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .adoptev-enterprise-point-container{
         flex-direction: column;
     }
-    .enterprise-about-us-container-paragraph p{
-        font-size: 90%;
-    }
-    .enterprise-several-points-and-form-container{
-        flex-direction: column-reverse;
-    }
-    .enterprise-several-points-and-form-container-form-element{
-        width: 100%;
-        flex: 100%;
-    }
-    .enterprise-several-points-and-form-container-form-element-inner-sontainer{
-        width: 100%;
-        height: 530px;
-        margin-top:     0px;
-        box-sizing: border-box;
-        padding: 30px 5%;
-    }
-    .enterprise-several-points-and-form-container-points-element{
+    .adoptev-enterprise-point-image-container{
         max-width: 100%;
         flex: 100%;
+    }
+    .adoptev-enterprise-point-content-container{
+        max-width: 100%;
+        flex: 100%;
+        padding-left: 30%;
+        margin-top: 20px;
+    }
+    .adoptev-enterprise-point-content-container h6{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 520px){
+    .adoptev-enterprise-point-content-container{
+        padding-left: 10%;
+    }
+}
+
+/* -------------------------contact us---------------------- */
+.enterprise-contact-us{
+    max-width: 100vw;
+    padding: 30px 7%;
+}
+.enterprise-contact-us-container{
+    display: flex;
+    width: 100%;
+}
+.enterprise-contact-us-content-container{
+    flex: 45%;
+    max-width: 45%;
+    padding: 20px 5%;
+    background-color: rgb(219, 219, 219);
+}
+.enterprise-contact-us-content-container h4{
+    font-weight: 700;
+}
+.enterprise-contact-us-content-element-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: baseline;
+    margin-top: 30px;
+}
+.enterprise-contact-us-content-logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.enterprise-contact-us-content-logo i{
+    font-size: 200%;
+}
+.enterprise-contact-us-content-mobile-number{
+    align-items: center;
+}
+.enterprise-contact-us-content-mobile-number h6{
+    margin-left: 20px;
+}
+
+.enterprise-contact-us-form-container{
+    flex: 55%;
+    max-width: 55%;
+    background-color: rgb(118, 192, 77);
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+.enterprise-contact-us-form-container::after{
+    content: "";
+    background-color: rgb(118, 192, 77);
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 5%;
+    left: -15px;
+    transform: rotate(135deg);
+}
+#enterprise-contact-us-form{
+    width: 80%;
+    color: white;
+    margin: 20px 0;
+}
+#enterprise-contact-us-form input{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border : 1px solid black;
+}
+#enterprise-contact-us-form textarea{
+    width: 100%;
+    margin-top: 15px;
+    padding: 10px 12px;
+    border-radius: 5px;
+    border : 1px solid black;
+}
+@media only screen and (max-width: 768px){
+    .enterprise-contact-us-container{
         flex-direction: column;
-        margin-top: 30px;
     }
-    .enterprise-several-points-and-form-container-points-element-internal-element{
+    .enterprise-contact-us-content-container{
+        flex: 100%;
+        max-width: 100%;
+    }
+    .enterprise-contact-us-form-container{
         max-width: 100%;
         flex: 100%;
+    }
+    .enterprise-contact-us-form-container::after{
+        display: none;
     }
 }
