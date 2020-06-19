@@ -1,0 +1,93 @@
+body{
+    padding: 0;
+    margin : 0;
+    overflow-x: hidden;
+    font-family: 'Barlow', sans-serif;
+}
+:root {
+    --page-color-scheme : #76c04d;
+    --page-background-color : rgb(250, 249, 249);
+    --page-paragraph-color : #373F41;
+    --page-heading-color : #373F41;
+  }
+
+h1,h2,h3,h4,h5,h6 { 
+    margin: 0;
+}
+.admin-page-landing-section{
+    height: 65vh;
+    width: 100vw;
+    background: url('../images/about-us-image.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+.admin-page-landing-section::after{
+    content: '';
+    position: absolute;
+    top : 0;
+    left: 0;
+    width: 100vw;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    
+}
+.admin-page-landing-section-heading{
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    z-index: 2;
+}
+
+.admin-page-landing-section-heading h1{
+    font-weight: 800;
+}
+
+.admin-page-requests-container{
+    width: 100%;
+    padding: 20px 7%;
+}
+.admin-page-requests-card-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid var(--page-color-scheme);
+    box-sizing: border-box;
+    padding: 10px 4%;
+    box-shadow: 5px 5px 15px #ccc;
+    margin: 30px 0;
+}
+
+.admin-page-requests-card-customer-name,
+.admin-page-requests-card-starting-address,
+.admin-page-requests-card-ending-address,
+.admin-page-requests-card-load{
+    display: flex;
+    align-items: baseline;
+    padding-bottom: 10px;
+}
+.admin-page-requests-card-customer-name h5,
+.admin-page-requests-card-starting-address h5,
+.admin-page-requests-card-ending-address h5,
+.admin-page-requests-card-load h5{
+    color: var(--page-color-scheme);
+}
+
+.admin-page-requests-card-customer-name h6,
+.admin-page-requests-card-starting-address h6,
+.admin-page-requests-card-ending-address h6,
+.admin-page-requests-card-load h6 {
+    margin-left: 30px;
+}
+
+.admin-page-price-submission{
+    margin-top: 10px;
+    max-width: 300px;
+    background-color: var(--page-color-scheme);
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+}
