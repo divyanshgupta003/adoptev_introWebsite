@@ -179,7 +179,7 @@ section.partner-us-main-section{
 }
 .section-first-partner-us-container-img-part img{
     width: 80%;
-    height: 350px;
+    height: auto;
 }
 
 @media only screen and (max-width: 768px){
