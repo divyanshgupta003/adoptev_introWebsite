@@ -118,19 +118,19 @@ footer{
     }
     .footer-content-container{
         max-width: 100%;
+        padding: 20px 0;
         border: none;
         border-bottom: 1px solid white;
         flex: 100%;
     }
     .footer-links-container{
-        margin-top: 10px;
-        padding-bottom: 15px;
+        padding: 25px 0;
         max-width: 100%;
         border: none;
         border-bottom: 1px solid white;
     }
     .footer-social-links-container{
-        padding-top: 20px;
+        padding: 20px 0;
         max-width: 100%;
     }
     .footer-links-inner-container{
