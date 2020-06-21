@@ -3,13 +3,14 @@ html {
 }
 body{
     background: url('/images/bg-02.png');
+    background-size: cover;
     padding: 0;
     margin : 0;
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
 }
 :root {
-    --page-color-scheme : #76c04d;
+    --page-color-scheme : #2cae66;
     --page-background-color : rgb(250, 249, 249);
     --page-paragraph-color : #8d8d8d;
     --page-heading-color : #373F41;
@@ -232,7 +233,7 @@ h1,h2,h3,h4,h5,h6 {
 .enterprise-contact-us-form-container{
     flex: 55%;
     max-width: 55%;
-    background-color: rgb(118, 192, 77);
+    background-color: var(--page-color-scheme);
     position: relative;
     z-index: 1;
     display: flex;
@@ -240,7 +241,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 .enterprise-contact-us-form-container::after{
     content: "";
-    background-color: rgb(118, 192, 77);
+    background-color: var(--page-color-scheme);
     height: 30px;
     width: 30px;
     position: absolute;

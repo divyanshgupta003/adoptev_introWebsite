@@ -24,16 +24,167 @@ a{
     text-emphasis: none;
 }
 footer{
-    font-family: 'Barlow', sans-serif;
-    background-color: #393939;
+    background-color: #414042;
     max-width: 100%;
     padding : 20px 0;
-    color: white;
+    color: #fcf6f5;
 }
-.footer-heading-app-container{
+.footer-container{
+    max-width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    padding: 20px 5%;
+    border-bottom: 1px solid #4e4d4e;
+}
+.footer-content-container{
+    flex: 35%;
+    max-width: 35%;
+    box-sizing: border-box;
+    padding: 0 3%;
+    border-right: 1px solid white;
+}
+.footer-content-image-container{
+    max-width: 100%;
+    display: flex;
+}
+.footer-content-image-container img{
+    max-width: 40%;
+}
+.footer-content-paragrapg-container{
+    margin-top: 20px;
+    text-align: justify;
+    max-width: 100%;
+}
+.footer-links-container{
+    flex: 30%;
+    max-width: 30%;
+    text-align: center;
+    border-right: 1px solid white;
+}
+.footer-links-container h6{
+    margin-top: 10px;
+}
+.footer-social-links-container{
+    flex: 35%;
+    max-width: 35%;
+    text-align: center;
+}
+.footer-social-links-container a,
+.footer-social-links-container a:active{
+    color: #fcf6f5;
+    text-decoration: none;
+}
+.footer-links-inner-container a:hover{
+    color: var(--page-color-scheme);
+    text-decoration: none;
+}
+.footer-social-icons-container{
+    margin-top: 50px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-social-icons-element{
+    border-radius: 50%;
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 30px;
+    color : #393939;
+    cursor: pointer;
+} 
+.footer-copyright-container{
+    max-width: 100vw;
+    padding: 10px 7% 0 7%;
+}
+@media only screen and (max-width: 768px){
+    .footer-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-content-image-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+    }
+    .footer-content-image-container img{
+        height: 40px;
+        max-width: 300px;
+    }
+    .footer-content-container{
+        max-width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+        flex: 100%;
+    }
+    .footer-links-container{
+        margin-top: 10px;
+        padding-bottom: 15px;
+        max-width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+    .footer-social-links-container{
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    .footer-links-inner-container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-links-inner-container h6{
+        flex: 30%;
+        max-width: 40%;
+    }
+    .footer-social-icons-container{
+        margin-top: 20px;
+    }
+}
+
+
+
+.scroll-to-top{
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 30px;
+    right: 40px;
+    height: 50px;
+    width: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(57, 57, 57 , 0.95);
+}
+.scroll-to-top i{
+    color: white;
+    font-size: 130%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .footer-heading-app-container{
     display: flex;
     max-width : 100%;
-    /* justify-content: center; */
     align-content: center;
     align-items: center;
     border-bottom: .5px solid rgb(71, 71, 71);
@@ -66,7 +217,6 @@ footer{
     font-size: 100%;
 }
 .footer-heading-app-container-app-element img{
-    /* max-width : 100px; */
     max-height: 40px;
     width : 120px;
 }
@@ -135,23 +285,6 @@ footer{
     text-align: center;
 }
 
-.scroll-to-top{
-    position: fixed;
-    box-sizing: border-box;
-    bottom: 30px;
-    right: 40px;
-    height: 50px;
-    width: 50px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(57, 57, 57 , 0.95);
-}
-.scroll-to-top i{
-    color: white;
-    font-size: 130%;
-}
-
 @media only screen and (max-width: 768px){
     .footer-heading-app-container{
         flex-direction: column;
@@ -195,4 +328,4 @@ footer{
         font-size: 80%;
     }
 }
-
+ */

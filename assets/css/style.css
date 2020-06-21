@@ -151,22 +151,7 @@ section.main-section{
         max-width: 100%;
     }
 }
-.main-page-services-and-logisitics-container{
-    background: url('../images/Charging-03.png');
-    background-size: cover;
-    /* height: 600px; */
-    width : 100vw
-}
-/* .main-page-services-and-logisitics-inner-box{
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: "";
-    height: 100%;
-    width: 100%;
-    z-index: 2;
-    background: url('../images/Charging-03.png');
-} */
+
 /* -------------------------------Our Services----------------------------------------------- */
 .our-services{
     z-index: 0;
