@@ -10,14 +10,20 @@
     </section> -->
     <!-- -----------------------------------------Landing Section------------------------- -->
     <section class="main-section navbar-color-change-div">
-        <div class="main-section-writing">
-            <h1 class="main-section-main-heading">Mission : Electric</h1>
-        </div>
-        <div class="main-section-writing">
-            <h3 class="main-section-main-tagline">An effort to reduce pollution by connecting drivers with our solution</h3>
-        </div>
-        <div class="main-section-writing">
-            <h1 class="main-section-main-link"><a href="#">Connect With Us</a></h1>
+        <div class="main-page-main-section-container">
+            <div class="main-page-main-section-content">
+                <div class="main-page-main-section-content-heading">
+                    <h2>Let's <span>Adopt EV</span></h2>
+                    <br>
+                    <h2>For</h2>
+                </div>
+                <div class="main-page-main-section-content-illustration">
+                    <h2>Carbon Footprint</h2>
+                </div>
+            </div>
+            <div class="main-page-main-section-image">
+                <img src="./images/Home_main-01.png" alt="">
+            </div>
         </div>
     </section>
     <!-- --------------------------------mission-------------------------------------------- -->
@@ -109,7 +115,7 @@
             <h3>AdoptEV Assure</h3>
             <h1>Invest In Building A Cleaner Future</h1>
         </div>
-        <!-- <div class="main-page-logistics-container"> -->
+        <div class="main-page-logistics-container">
             <div class="main-page-logistics-inside-container">
                 <div class="main-page-logistics-inside-container-small-immge-container">
                     <img src="./images/Logistics-01.png" alt="">
@@ -126,7 +132,7 @@
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
     </section>
 
     <!-- -------------------------------------------contact Us---------------------------------- -->
@@ -148,17 +154,17 @@
             <div class="contact-us-form-section">
                 <div class="contact-us-form-section-container">
                     <form id="enquirySubmitForm" action="/enquiry">
-                        <input type="text" name="name" id="" placeholder="Your Full Name">
-                        <input type="email" name="email" id="" placeholder="Your valid Email ID">
-                        <input type="number" name="phone" id=""  placeholder="Phone Number So That We Can Contact You">
-                        <select name="userType" id="cars" onchange="expandform(this.value)">
+                        <input type="text" name="name" id="" placeholder="Your Full Name" required>
+                        <input type="email" name="email" id="" placeholder="Your valid Email ID" required>
+                        <input type="number" name="phone" id=""  placeholder="Phone Number So That We Can Contact You" required>
+                        <select name="userType" id="cars" onchange="expandform(this.value)"  required>
                             <option value="customer">Customer</option>
                             <option value="partner">Partner</option>
                             <option value="driver">Driver</option>
                             <option value="fleetOwner">Fleet Owner</option>
                         </select>
-                        <input type="text" name="company" id="contact-us-form-company" style="display: none;" placeholder="A CO. or org you are writing in behalf of">
-                        <input type="text" name="position" id="contact-us-form-position" style="display: none;" placeholder="Your Job title">
+                        <input type="text" name="company" id="contact-us-form-company" style="display: none;" placeholder="A CO. or org you are writing in behalf of" required>
+                        <input type="text" name="position" id="contact-us-form-position" style="display: none;" placeholder="Your Job title" required>
                         <textarea name="enquiry" id="contact-us-form-enquiry" rows="2" placeholder="Your Enquiry?"></textarea>
                         <input type="submit" id="enquirySubmitButton" value="End You Enquiry">
                     </form>

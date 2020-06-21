@@ -77,7 +77,7 @@ window.addEventListener('scroll' ,  () => {
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         scrollToTopIcon.style.display = "flex";
     }else{
-        document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
+        document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "#393939";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
         scrollToTopIcon.style.display = "none";
     }
