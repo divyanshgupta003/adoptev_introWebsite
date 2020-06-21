@@ -14,6 +14,9 @@ body{
 h1,h2,h3,h4,h5,h6 { 
     margin: 0;
 }
+#navbar-home{
+    color: var(--page-color-scheme);
+}
 /* -----------------------------fixed-social-icons----------------------------------------------- */
 /* .fixed-social-icons{
     position: fixed;
@@ -65,7 +68,7 @@ section.main-section{
 }
 .main-page-main-section-content-heading h2{
     font-weight: 700;
-    font-size: 220%;
+    font-size: 180%;
 }
 .main-page-main-section-content-heading span{
     color: var(--page-color-scheme);
@@ -80,21 +83,24 @@ section.main-section{
     justify-content: center;
     align-items: center;
     position: relative;
+    flex-direction: column;
 }
 .main-page-main-section-content-illustration::after{
     content: "";
     position: absolute;
-    top : 52%;
-    left: 10%;
-    height: 5px;
-    width: 80%;
+    top : 33%;
+    left: 15%;
+    height: 4px;
+    width: 70%;
     background-color: var(--page-color-scheme);
 }
 .main-page-main-section-content-illustration h2{
     font-weight: 800;
-    font-size: 240%;
+    font-size: 180%;
 }
-
+.main-page-main-section-content-illustration strong{
+    color: var(--page-color-scheme);
+}
 
 .main-page-main-section-image{
     flex: 60%;
@@ -122,6 +128,7 @@ section.main-section{
     .main-page-main-section-content{
         flex: 100%;
         max-width: 100%;
+        padding-bottom: 10px;
     }
     .main-page-main-section-content-heading h2{
         font-size: 180%;
@@ -137,56 +144,38 @@ section.main-section{
         font-weight: 800;
         font-size: 180%;
     }
+    .main-page-main-section-content-illustration::after{
+        top : 20%;
+    }
     .main-page-main-section-image img{
         max-width: 100%;
     }
 }
-/* ----------------------------------mission---------------------------------------- */
-.home-page-mission{
-    background-color: var(--page-background-color);
-    padding : 50px 7%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.main-page-services-and-logisitics-container{
+    background: url('../images/Charging-03.png');
+    background-size: cover;
+    /* height: 600px; */
+    width : 100vw
 }
-.home-page-mission-dots{
-    width : 100%;
-    display: flex;
-    justify-content: center;
-}
-.home-page-mission-dots-container{
-    width: 10%;
-    height : 10px;
-    display: flex;
-    justify-content: space-around;
-}
-.home-page-mission-dots-container-dots{
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: var(--page-heading-color);
-}
-.home-page-mission-paragraph{
-    margin-top: 30px;
+/* .main-page-services-and-logisitics-inner-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    height: 100%;
     width: 100%;
-    text-align: center;
-}
-.home-page-mission-paragraph p{
-    font-size: 150%;
-    font-weight: 600;
-}
-.home-page-mission-line{
-    margin-top: 30px;
-    width: 15%;
-    background-color: var(--page-heading-color);
-    height: 7px;
-}
+    z-index: 2;
+    background: url('../images/Charging-03.png');
+} */
 /* -------------------------------Our Services----------------------------------------------- */
 .our-services{
+    z-index: 0;
     max-width : 100%;
-    padding : 40px 7% 20px 7%;
+    padding : 50px 7% 40px 7%;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    background: url('../images/services-03.png');
+    background-size: cover;
 }
 .our-services-heading{
     width: 100%;
@@ -204,13 +193,14 @@ section.main-section{
 }
 .our-services-container{
     margin-top: 30px;
-    max-width: 100%;
+    max-width: 65%;
     display: flex;
     justify-content: space-around;
 }
 .our-services-container-element{
     flex : 30%;
     max-width: 30%;
+    margin-top: 20px;
 }
 .our-services-container-element-img{
     max-width: 100%;
@@ -220,7 +210,7 @@ section.main-section{
 }
 .our-services-container-element-img img{
     width: 60%;
-    height: 80px;
+    height: 100px;
 }
 .our-services-container-element-heading{
     text-align: center;
@@ -228,6 +218,7 @@ section.main-section{
 }
 .our-services-container-element-heading h4{
     font-weight: 550;
+    font-size: 110%;
 }
 .our-services-container-element-content{
     text-align: justify;
@@ -250,6 +241,7 @@ section.main-section{
         align-items: center;
         justify-content: center;
         flex-direction: column;
+        max-width: 100%;
     }
     .our-services-container-element{
         flex : 80%;
@@ -257,7 +249,8 @@ section.main-section{
         min-width: 80%;
     }
     .our-services-container-element-img img{
-        height: 100px;
+        height: 80px;
+        width: 100px;
     }
     .our-services-container-element-heading h4{
         font-size: 130%;
@@ -274,7 +267,6 @@ section.main-section{
     padding: 40px 7% 60px 7%;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    background-color: var(--page-background-color);
 }
 .main-page-logistics-heading{
     width: 100%;
