@@ -186,8 +186,99 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
+/* ---------------------pop up form--------------------- */
+.enterprise-form-button{
+    padding: 30px 7%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.enterprise-form-button button{
+    padding: 10px 30px;
+    background-color: var(--page-color-scheme);
+    color: white;
+    border: none;
+    outline: none;
+}
+.enterprise-pop-up-form{
+    transition: 0.4s ease;
+    position: fixed;
+    transform: translate(-50% , -50%);
+    top:  -50%;
+    left: 50%;
+    width: 40vw;
+    background-color: white;
+    padding: 20px 2% 30px 2%;
+    z-index: 102;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.enterprise-form{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.enterprise-form input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #C2C7D0;
+}
+
+.enterprise-form input[type=submit]{
+    background-color: var(--page-color-scheme);
+    color: white;
+}
+
+.enterprise-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #C2C7D0;
+}
+
+
+.enterprise-blur-page{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0 , 0.8);
+    z-index: 101;
+    display: none;
+}
+.enterprise-form-message-after-submission{
+    max-width: 100%;
+    position: relative;
+    top:30%;
+    display: none;
+    font-size : 150%;
+    color: black;
+    text-align: center;
+}
+.enterprise-form-message-after-submission i{
+    color : black;
+    margin-right : 5px;
+}
+
+@media only screen and (max-width: 768px){
+    .enterprise-pop-up-form{
+        height: 85vh;
+        overflow: auto;
+        width: 80vw;
+    }
+    .enterprise-pop-up-form h4{
+        font-size: 130%;
+    }
+}
 /* -------------------------contact us---------------------- */
-.enterprise-contact-us{
+/* .enterprise-contact-us{
     max-width: 100vw;
     padding: 30px 7%;
 }
@@ -294,5 +385,5 @@ h1,h2,h3,h4,h5,h6 {
     }
     .enterprise-contact-us-form-container::after{
         display: none;
-    }
-}
+    } */
+/* } */

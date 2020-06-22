@@ -76,11 +76,12 @@ nav.mobile-navbar{
     box-sizing: border-box;
     width: 100vw;
     height : 60px;
-    background-color: #393939;
+    background-color: transparent;
     position: fixed;
     top : 0%;
     left : 0%;
     display: none;
+    padding: 0 7%;
 }
 .burger-container{
     position: absolute;
@@ -96,7 +97,7 @@ nav.mobile-navbar{
     width : 28px;
     height : 4px;
     margin : 0 0 5px 0;
-    background-color: white;
+    background-color: black;
 }
 .burger-container.close div:nth-child(1){
     transform: rotate(45deg) translate(7px , 5px);
@@ -107,7 +108,7 @@ nav.mobile-navbar{
 .mobile-navbar-logo{
     position : absolute;
     transform: translate(-50%,-50%);
-    left : 60px;
+    left : 90px;
     top : 50%;
     width : 120px ;
     height: 50px;
@@ -117,7 +118,8 @@ nav.mobile-navbar{
     height: 100%;
 }
 .mobile-navbar-links{
-    background-color: rgb(57, 57, 57 , 0.97); 
+    /* background-color: rgb(57, 57, 57 , 0.97);  */
+    background-color: white;
     width: 100vw;
     height: 0px;
     display: none;
@@ -133,13 +135,13 @@ nav.mobile-navbar{
 }
 .mobile-navbar-links div{
     max-width : 100%;
-    color : white;
+    color : black;
     display: flex;
     padding: 5px 10% ;
 }
 .mobile-navbar-links div a{
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 60%;
 } 
 

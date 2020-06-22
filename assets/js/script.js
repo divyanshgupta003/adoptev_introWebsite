@@ -1,25 +1,25 @@
 
 
-function expandform(val){
-    const company = document.getElementById('contact-us-form-company');
-    const position = document.getElementById('contact-us-form-position');
-    const enquiry = document.getElementById('contact-us-form-enquiry');
-    if(val == 'partner'){
-        company.style.display = "block";
-        position.style.display = "block";
-        enquiry.setAttribute('placeholder' , "Support/Proposal you're interested in?");
-    }else if(val == "fleetOwner"){
-        company.style.display = "block";
-        company.setAttribute('placeholder' , "Which Organisation do you belong to?");
-        position.style.display = "none";
-        enquiry.setAttribute('placeholder' , "Hey, What Do you want to Enquire About?");
-    }
-    else{
-        company.style.display = "none";
-        position.style.display = "none";
-        enquiry.setAttribute('placeholder' , "Your Enquiry?");
-    }
-}
+// function expandform(val){
+//     const company = document.getElementById('contact-us-form-company');
+//     const position = document.getElementById('contact-us-form-position');
+//     const enquiry = document.getElementById('contact-us-form-enquiry');
+//     if(val == 'partner'){
+//         company.style.display = "block";
+//         position.style.display = "block";
+//         enquiry.setAttribute('placeholder' , "Support/Proposal you're interested in?");
+//     }else if(val == "fleetOwner"){
+//         company.style.display = "block";
+//         company.setAttribute('placeholder' , "Which Organisation do you belong to?");
+//         position.style.display = "none";
+//         enquiry.setAttribute('placeholder' , "Hey, What Do you want to Enquire About?");
+//     }
+//     else{
+//         company.style.display = "none";
+//         position.style.display = "none";
+//         enquiry.setAttribute('placeholder' , "Your Enquiry?");
+//     }
+// }
 
 // ------------------------burger icon--------------------------------------------------
 const burgerContainer = document.querySelector(".burger-container");
@@ -79,6 +79,13 @@ window.addEventListener('scroll' ,  () => {
     }else{
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
+        scrollToTopIcon.style.display = "none";
+    }
+    if(distFromBottom <= '500'){
+        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
+        scrollToTopIcon.style.display = "flex";
+    }else{
+        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
         scrollToTopIcon.style.display = "none";
     }
 });
