@@ -1,13 +1,14 @@
+
 $(document).ready(function(){
-    let enquiryForm = $('#enquirySubmitForm');
+    let enquiryForm = $('#enterprise-contact-us-form');
     enquiryForm.submit(function(e){
         e.preventDefault();
         $.ajax({
             type : 'POST',
-            url : 'http://localhost:8000/form/enquiry',
+            url : 'http://localhost:8000/form/enterprise-form',
             data :enquiryForm.serialize(),
             success : () =>{
-                $('.form-submission-after-message').css({
+                $('.enterprise-form-submission-message').css({
                     "display" : "flex"
                 })
                 enquiryForm.css({

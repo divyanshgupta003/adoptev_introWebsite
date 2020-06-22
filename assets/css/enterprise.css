@@ -7,7 +7,7 @@ body{
     padding: 0;
     margin : 0;
     overflow-x: hidden;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 :root {
     --page-color-scheme : #2cae66;
@@ -267,6 +267,18 @@ h1,h2,h3,h4,h5,h6 {
     padding: 10px 12px;
     border-radius: 5px;
     border : 1px solid black;
+}
+.enterprise-form-submission-message{
+    max-width: 100%;
+    position: relative;
+    top:30%;
+    display: none;
+    font-size : 150%;
+    color: white;
+}
+.enterprise-form-submission-message i{
+    color : black;
+    margin-right : 5px;
 }
 @media only screen and (max-width: 768px){
     .enterprise-contact-us-container{
