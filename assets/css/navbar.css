@@ -131,18 +131,23 @@ nav.mobile-navbar{
     left : 0px;
     transition: all,0.3s ease;
     overflow: hidden;
+    text-align: center;
     
 }
 .mobile-navbar-links div{
     max-width : 100%;
     color : black;
     display: flex;
-    padding: 5px 10% ;
-}
-.mobile-navbar-links div a{
+    /* padding: 5px 10% ; */
+}   
+.mobile-navbar-links a{
+    max-width : 100%;
     text-decoration: none;
     color: black;
     font-size: 60%;
+    display: flex;
+    padding: 16px 10%;
+    justify-content: center;
 } 
 
 @media only screen and (max-width: 768px){
