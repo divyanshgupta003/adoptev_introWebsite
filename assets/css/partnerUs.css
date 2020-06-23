@@ -33,6 +33,7 @@ section.partner-us-main-section{
     max-width: 100vw;
     display: flex;
     max-width: 100vw;
+    margin-top: 50px;
 }
 .partner-us-main-section-content{
     flex: 45%;
@@ -52,7 +53,7 @@ section.partner-us-main-section{
 }
 .partner-us-main-section-content-heading p{
     text-align: left;
-    color: var(--page-paragraph-color);
+    color: #383838;
     padding-left: 5%;
     margin-top: 30px;
 }
@@ -85,13 +86,14 @@ section.partner-us-main-section{
     }
     .partner-us-main-section-container{
         flex-direction: column;
+        margin-top:0px;
     }
     .partner-us-main-section-content{
         flex: 100%;
         max-width: 100%;
     }
     .partner-us-main-section-content-heading h2{
-        font-size: 180%;
+        font-size: 160%;
     }
     .partner-us-main-section-image{
         flex: 100%;
@@ -194,6 +196,7 @@ section.partner-us-main-section{
     }
     .section-first-partner-us-container{
         flex-direction: column;
+        padding-left: 10%;
     }
     .section-first-partner-us-container-content-part{
         flex : 90%;
@@ -245,6 +248,7 @@ section.partner-us-main-section{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    padding-left: 10%;
 }
 .section-second-partner-us-container-content-part{
     flex : 50%;
@@ -361,6 +365,7 @@ section.partner-us-main-section{
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    padding-left: 10%;
 }
 .section-third-partner-us-container-content-part{
     flex : 50%;
@@ -448,8 +453,19 @@ section.partner-us-main-section{
 }
 
 /* ---------------------pop up form--------------------- */
+.partner-us-form-heading{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--page-heading-color);
+    padding: 0 7%;
+}
+.partner-us-form-heading h3{
+    font-weight: 700;
+}
 .partner-us-form-button{
-    padding: 30px 7%;
+    padding: 40px 7%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -495,7 +511,13 @@ section.partner-us-main-section{
     background-color: var(--page-color-scheme);
     color: white;
 }
-
+.partner-us-form select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #C2C7D0;
+    background-color: white;
+}
 .partner-us-form textarea{
     width: 100%;
     padding: 10px;
@@ -514,6 +536,15 @@ section.partner-us-main-section{
     z-index: 101;
     display: none;
 }
+.partner-us-blur-page-cross-mark{
+    position: absolute;
+    top : 10px;
+    right : 10px;   
+}
+.partner-us-blur-page-cross-mark i{
+    font-size: 40px;
+    color: var(--page-color-scheme);
+}
 .partner-us-form-message-after-submission{
     max-width: 100%;
     position: relative;
@@ -529,6 +560,11 @@ section.partner-us-main-section{
 }
 
 @media only screen and (max-width: 768px){
+    .partner-us-form-heading h3{
+        font-weight: 700;
+        margin-top: 30px;
+        font-size: 120%;
+    }
     .partner-us-pop-up-form{
         height: 85vh;
         overflow: auto;
@@ -536,5 +572,8 @@ section.partner-us-main-section{
     }
     .partner-us-pop-up-form h4{
         font-size: 130%;
+    }
+    .partner-us-blur-page-cross-mark{
+        top : 5px; 
     }
 }

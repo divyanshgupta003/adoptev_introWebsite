@@ -4,7 +4,7 @@
     <div class="partner-us-main-section-container">
         <div class="partner-us-main-section-content">
             <div class="partner-us-main-section-content-heading">
-                <h2>Partner With Us</h2>
+                <h2>Partner With <strong style="color: #2cae66;">AdoptEV</strong></h2>
                 <p>We are on a mission to make mobility more green and eco-friendly in India. We invite innovative and technology startups, manufacturers, investors and individual entrepreneurs in electric mobility industry to collaborate with us in making transportation green and clean.</p>
             </div>
         </div>
@@ -17,7 +17,7 @@
 <section class="section-first-partner-us">
     <div class="section-first-partner-us-heading">
         <!-- <h3>AdoptEV Smart Charge</h3> -->
-        <h2>Green India with <strong style="color: #2cae66;">Adopt EV</strong></h2>
+        <h2>Green India with <strong style="color: #2cae66;">AdoptEV</strong></h2>
     </div>
         
     <div class="section-first-partner-us-container">
@@ -27,7 +27,7 @@
         <div class="section-first-partner-us-container-content-part">
             <div class="section-first-partner-us-container-content-part-heading">
                 <!-- <h3>AdoptEV Smart Charge</h3> -->
-                <h2>Green India with <strong style="color: #2cae66;">Adopt EV</strong></h2>
+                <h2>Green India with <strong style="color: #2cae66;">AdoptEV</strong></h2>
             </div>
             <div class="section-first-partner-us-container-content-part-content">
                 <p>Collaborate in "electric vehicle grid mission" as an investor, technology, vehicle and delivery partner and get guaranteed and attractive returns every month.</p>
@@ -42,13 +42,13 @@
 <section class="section-second-partner-us">
     <div class="section-second-partner-us-heading">
         <!-- <h3>AdoptEV Assure</h3> -->
-        <h2>Join Hands with <strong style="color: #2cae66;">Adopt EV</strong> to support Sustainable Mobility</h2>
+        <h2>Join Hands with <strong style="color: #2cae66;">AdoptEV</strong> to support Sustainable Mobility</h2>
     </div>
     <div class="section-second-partner-us-container">
         <div class="section-second-partner-us-container-content-part">
             <div class="section-second-partner-us-container-content-part-heading">
                 <!-- <h3>AdoptEV Assure</h3> -->
-                <h2>Join Hands with <strong style="color: #2cae66;">Adopt EV</strong> to support Sustainable Mobility</h2>
+                <h2>Join Hands with <strong style="color: #2cae66;">AdoptEV</strong> to support Sustainable Mobility</h2>
             </div>
             <div class="section-second-partner-us-container-content-part-content">
                 <p>Participate in the mission of building EV charging infrastructure by investing and partnering with us in battery, charging and swapping stations, telematics and much more.</p>
@@ -66,7 +66,7 @@
 <section class="section-third-partner-us">
     <div class="section-third-partner-us-heading">
         <!-- <h3>AdoptEV Smart section-third</h3> -->
-        <h2>Promote With <strong style="color: #2cae66;">Adopt EV</strong></h2>
+        <h2>Promote With <strong style="color: #2cae66;">AdoptEV</strong></h2>
     </div>
         
     <div class="section-third-partner-us-container">
@@ -76,7 +76,7 @@
         <div class="section-third-partner-us-container-content-part">
             <div class="section-third-partner-us-container-content-part-heading">
                 <!-- <h3>AdoptEV Smart section-third</h3> -->
-                <h2>Promote With <strong style="color: #2cae66;">Adopt EV</strong></h2>
+                <h2>Promote With <strong style="color: #2cae66;">AdoptEV</strong></h2>
             </div>
             <div class="section-third-partner-us-container-content-part-content">
                 <p>Now attract more customers and increase revenues and earnings manyfold by promoting your products and services as an advertisement on our vehicles.</p>
@@ -87,10 +87,17 @@
         </div>
     </div>
 </section>
+<div class="partner-us-form-heading">
+    <h3>Come one Step ahead by filling the form, and then we'll contact you</h3>
+</div>
+
 <section class="partner-us-form-button">
     <button onclick="appearForm()"><strong>Partner Us</strong></button>
 </section>
 <section class="partner-us-pop-up-form">
+    <div onclick="disappearForm()" class="partner-us-blur-page-cross-mark">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
     
     <form id="partner-us-form-submission" class="partner-us-form" action="/form/partner-us-form" method="post">
         <h4>Fill Out the form To be a Part of <span style="color: #2cae66;">AdoptEV</span></h4>
@@ -98,7 +105,12 @@
         <input type="text" name="CompanyName" id="" placeholder="Company Name" required>
         <input type="email" name="email" id="" placeholder="Your Official Email" required>
         <input type="number" name="phone" id="" placeholder="Your Contact Number" required>
-        <input type="text" name="partnerType" id="" placeholder="You wish to Partner us for What??" required>
+        <!-- <input type="text" name="partnerType" id="" placeholder="You wish to Partner us for What??" required> -->
+        <select name="partnerType">
+            <option value="Vehicle Partner">Vehicle Partner</option>
+            <option value="Charging Partner">Charging Partner</option>
+            <option value="Branding partner">Branding Partner</option>
+          </select>
         <textarea name="message" id="" placeholder="Note" required></textarea>
         <input type="submit" value="Request a Call">
     </form>
@@ -108,7 +120,6 @@
     </div>
 </section>
 <section onclick="disappearForm()" class="partner-us-blur-page">
-
 </section>
 
 <script src="/js/partnerUsForm.js"></script>

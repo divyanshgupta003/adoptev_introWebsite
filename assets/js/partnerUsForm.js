@@ -1,5 +1,6 @@
 const formContainer = document.getElementsByClassName('partner-us-pop-up-form')[0];
 const backgroundBlur = document.getElementsByClassName('partner-us-blur-page')[0];
+const crossButton = document.getElementsByClassName('.partner-us-blur-page-cross-mark')[0];
 
 const appearForm = ()=>{
     formContainer.style.top = "50%";

@@ -147,7 +147,7 @@ nav.mobile-navbar{
     font-size: 60%;
     display: flex;
     padding: 16px 10%;
-    justify-content: center;
+    /* justify-content: center; */
 } 
 
 @media only screen and (max-width: 768px){

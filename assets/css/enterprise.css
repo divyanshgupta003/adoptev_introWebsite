@@ -112,11 +112,15 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     display: flex;
     margin-top: 40px;
+    /* padding-left: 7%; */
 }
 .enterprise-about-us-container-paragraph{
-    flex:90%;
-    max-width: 90%;
+    flex:100%;
+    max-width: 100%;
     font-size: 110%;
+}
+.enterprise-landing-section-image-container{
+    max-width: 100%;
 }
 /* --------------Enterprises----------------------- */
 
@@ -153,6 +157,9 @@ h1,h2,h3,h4,h5,h6 {
 .adoptev-enterprise-point-content-container{
     max-width: 40%;
     flex: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .adoptev-enterprise-point-content-container h6{
     color: var(--page-color-scheme);
@@ -161,6 +168,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 .adoptev-enterprise-point-content-container li{
     font-size: 110%;
+}
+.adoptev-enterprise-point-content-container p{
+    text-align: justify;
 }
 @media only screen and (max-width: 768px){
     .adoptev-enterprise-point-container{
@@ -173,20 +183,27 @@ h1,h2,h3,h4,h5,h6 {
     .adoptev-enterprise-point-content-container{
         max-width: 100%;
         flex: 100%;
-        padding-left: 30%;
+        /* padding-left: 30%; */
         margin-top: 20px;
     }
     .adoptev-enterprise-point-content-container h6{
         text-align: center;
     }
 }
-@media only screen and (max-width: 520px){
-    .adoptev-enterprise-point-content-container{
-        padding-left: 10%;
-    }
-}
 
 /* ---------------------pop up form--------------------- */
+.enterprise-form-heading{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--page-heading-color);
+    padding: 0 7%;
+    margin-top: 30px;
+}
+.enterprise-form-heading h3{
+    font-weight: 700;
+}
 .enterprise-form-button{
     padding: 30px 7%;
     width: 100%;
@@ -268,6 +285,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @media only screen and (max-width: 768px){
+    .enterprise-form-heading h3{
+        font-weight: 700;
+        margin-top: 10px;
+        font-size: 120%;
+    }
     .enterprise-pop-up-form{
         height: 85vh;
         overflow: auto;
