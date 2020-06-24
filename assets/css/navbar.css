@@ -30,24 +30,40 @@ nav.desktop-navbar{
     position: fixed;
     height : 11vh;
     width : 100vw;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-transition: all ,0.4s ease;
+    -o-transition: all ,0.4s ease;
     transition: all ,0.4s ease;
     color: black;
     padding: 0 7%;
 }
 .desktop-navbar-logo{
-    box-sizing: border-box;
-    flex : 35%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-flex : 35%;
+        -ms-flex : 35%;
+            flex : 35%;
     max-width: 35%;
     margin-top: 10px;
 }
 .desktop-navbar-links{
-    flex : 65%;
+    -webkit-box-flex : 65%;
+        -ms-flex : 65%;
+            flex : 65%;
     max-width: 65%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     color: black;
 }
 .desktop-navbar-links span{
@@ -73,7 +89,8 @@ nav.desktop-navbar{
     height: 80%;
 }
 nav.mobile-navbar{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 100vw;
     height : 60px;
     background-color: transparent;
@@ -87,11 +104,15 @@ nav.mobile-navbar{
     position: absolute;
     top : 20px;
     right : 35px;
+    -webkit-transition: all , 0.4s ease;
+    -o-transition: all , 0.4s ease;
     transition: all , 0.4s ease;
 
 }
 .burger-container.close{
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
 }
 .burger-container-lines{
     width : 28px;
@@ -100,14 +121,20 @@ nav.mobile-navbar{
     background-color: black;
 }
 .burger-container.close div:nth-child(1){
-    transform: rotate(45deg) translate(7px , 5px);
+    -webkit-transform: rotate(45deg) translate(7px , 5px);
+        -ms-transform: rotate(45deg) translate(7px , 5px);
+            transform: rotate(45deg) translate(7px , 5px);
 }
 .burger-container.close div:nth-child(2){
-    transform: rotate(-45deg) translate(3px , 2px);
+    -webkit-transform: rotate(-45deg) translate(3px , 2px);
+        -ms-transform: rotate(-45deg) translate(3px , 2px);
+            transform: rotate(-45deg) translate(3px , 2px);
 }
 .mobile-navbar-logo{
     position : absolute;
-    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
     left : 90px;
     top : 50%;
     width : 120px ;
@@ -126,9 +153,14 @@ nav.mobile-navbar{
     font-family: 'Barlow', sans-serif;
     position: fixed;
     z-index : 100;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     top :60px;
     left : 0px;
+    -webkit-transition: all,0.3s ease;
+    -o-transition: all,0.3s ease;
     transition: all,0.3s ease;
     overflow: hidden;
     text-align: center;
@@ -137,6 +169,8 @@ nav.mobile-navbar{
 .mobile-navbar-links div{
     max-width : 100%;
     color : black;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     /* padding: 5px 10% ; */
 }   
@@ -145,6 +179,8 @@ nav.mobile-navbar{
     text-decoration: none;
     color: black;
     font-size: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 16px 10%;
     /* justify-content: center; */
@@ -158,6 +194,8 @@ nav.mobile-navbar{
         display: block;
     }
     .mobile-navbar-links{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     
