@@ -132,7 +132,7 @@ section.main-section{
             align-items: center;
 }
 .main-page-main-section-image img{
-    max-width: 120%;
+    max-width: 100%;
 }
 
 
@@ -180,137 +180,59 @@ section.main-section{
         max-width: 100%;
     }
 }
-
-/* -------------------------------Our Services----------------------------------------------- */
-.our-services{
-    z-index: 0;
-    max-width : 100%;
-    padding : 50px 7% 40px 7%;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-    background: url('../images/services-03.png');
-    background-size: cover;
-}
-.our-services-heading{
-    width: 100%;
-    /* text-align: center; */
-    margin : 30px 0 40px 0;
-}
-.our-services-heading h1{
-    font-size : 250%;
-    font-weight: 600;
-    color: var(--page-heading-color);
-}
-.our-services-heading h3{
-    font-size: 150%;
-    color : var(--page-color-scheme);
-}
-.our-services-container{
-    margin-top: 30px;
-    max-width: 65%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-}
-.our-services-container-element{
-    -webkit-box-flex : 30%;
-        -ms-flex : 30%;
-            flex : 30%;
-    max-width: 30%;
-    margin-top: 20px;
-}
-.our-services-container-element-img{
+/* -----------------------------about us-------------- */
+.main-page-about-us{
+    background-color: rgb(247, 148, 29 , 0.15);
     max-width: 100%;
-    height: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-}
-.our-services-container-element-img img{
-    width: 60%;
-    height: 120px;
-}
-.our-services-container-element-heading{
-    text-align: center;
-    margin-top: 30px;
-}
-.our-services-container-element-heading h4{
-    font-weight: 550;
-    font-size: 100%;
-}
-.our-services-container-element-content{
-    text-align: justify;
-    margin-top: 20px;
-    color: var(--page-paragraph-color);
-    font-size: 100%;
+    padding: 50px 7%;
 }
 
-@media only screen and (max-width: 768px){
-    .our-services-heading{
-        text-align: center;
-    }
-    .our-services-heading h3{
-        font-size: 150%;
-    }
-    .our-services-heading h1{
-        font-size: 200%;
-    }
-    .our-services-container{
-        -webkit-box-align: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
-        max-width: 100%;
-    }
-    .our-services-container-element{
-        -webkit-box-flex : 80%;
-            -ms-flex : 80%;
-                flex : 80%;
-        max-width: 80%;
-        min-width: 80%;
-        margin-top: 50px;
-    }
-    .our-services-container-element-img img{
-        height: 80px;
-        width: 100px;
-    }
-    .our-services-container-element-heading{
-        margin-top: 0;
-    }
-    .our-services-container-element-heading h4{
-        font-size: 130%;
-        
-    }
+.main-page-about-us-container{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-@media only screen and (max-width: 520px){
-    .our-services-container-element-img img{
-        height: 90px;
-    }
+.main-page-about-us-line{
+    width: 130px;
+    flex: 8px;
+    min-height: 8px;
+    background-color: var(--page-heading-color);
+    margin: 20px 0;
 }
+.main-page-about-us-dots-container{
+    max-width: 100%;
+    display: flex;
+    flex: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.main-page-about-us-dots{
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    background-color: var(--page-heading-color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 /* -----------------------main-page-logistics--------------------------- */
 .main-page-logistics{
     max-width: 100vw;
     padding: 40px 7% 60px 7%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background-color: rgb(247, 148, 29 , 0.15);
+    /* background-color: rgb(247, 148, 29 , 0.15); */
+    background: url('../images/services-03.png');
+    background-size: cover;
 }
 .main-page-logistics-heading{
     width: 100%;
     text-align: center;
-    margin : 30px 0 40px 0;
+    margin : 50px 0 40px 0;
 }
 .main-page-logistics-heading h1{
     font-size: 250%;
@@ -322,7 +244,7 @@ section.main-section{
     color : var(--page-color-scheme);
 }
 .main-page-logistics-container{
-    width: 100%;
+    width: 90%;
     /* background: url('../images/transport-isometric-flowchart-with-various-vehicles-blue-background-3d_1284-32252.jpg'); */
     height: 55vh;
     position: relative;
@@ -387,8 +309,9 @@ section.main-section{
 .main-page-logistics-inside-container-content-paragraph{
     margin-top: 25px;
     width: 50%;
-    color: #3b3b3b;
+    color: var(--page-paragraph-color);
     text-align: justify;
+    font-size: 110%;
 }
 .main-page-logistics-inside-container-content-line{
     margin-top: 20px;
@@ -396,17 +319,41 @@ section.main-section{
     height: 7px;
     background-color: var(--page-paragraph-color);
 }
+.main-page-logistics-illustrations-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+.main-page-logistics-illustrations-element-container{
+    flex: 20%;
+    max-width: 20%;
+    box-sizing: border-box;
+}
+.main-page-logistics-illustrations-element-image-container{
+    max-width: 100%;
+}
+.main-page-logistics-illustrations-element-image-container img{
+    max-width: 80%;
+}
+.main-page-logistics-illustrations-element-heading{
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 768px){
     .main-page-logistics{
-        height: 90vh;
+        /* height: 100vh; */
     }
     .main-page-logistics-heading{
         font-size: 70%;
         margin : 0;
     }
     .main-page-logistics-container{
-        height : 400px;
+        height : 480px;
+        width: 100%;
     }
     .main-page-logistics-inside-container{
         -webkit-box-orient: vertical;
@@ -439,20 +386,155 @@ section.main-section{
         -webkit-box-flex : 100%;
             -ms-flex : 100%;
                 flex : 100%;
-        margin-top: 20px;
+        margin-top: 150px;
     }
     .main-page-logistics-inside-container-content-paragraph{
         width: 90%;
     }
     .main-page-logistics-inside-container-content-heading{
-        display: none;
+        font-size: 70%;
+    }
+    .main-page-logistics-illustrations-container{
+        margin-top: 60px;
     }
 }
+@media only screen and (max-width: 520px){
+    .main-page-logistics-inside-container-content{
+        margin-top: 20px;
+    }
+    .main-page-logistics-illustrations-container{
+        flex-wrap: wrap;
+    }
+    .main-page-logistics-illustrations-element-container{
+        flex: 50%;
+        max-width: 50%;
+        margin-top: 30px;
+        text-align: center;
+    }
+}
+/* -------------------------------Our Services----------------------------------------------- */
+.our-services{
+    z-index: 0;
+    max-width : 100%;
+    padding : 50px 7% 40px 7%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(247, 148, 29 , 0.15);
+}
+.our-services-heading{
+    text-align: center;
+    width: 100%;
+    /* text-align: center; */
+    margin : 30px 0 40px 0;
+}
+.our-services-heading h1{
+    font-size : 250%;
+    font-weight: 600;
+    color: var(--page-heading-color);
+}
+.our-services-heading h3{
+    font-size: 150%;
+    color : var(--page-color-scheme);
+}
+.our-services-container{
+    margin-top: 30px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+}
+.our-services-container-element{
+    -webkit-box-flex : 30%;
+        -ms-flex : 30%;
+            flex : 30%;
+    max-width: 30%;
+    margin-top: 20px;
+}
+.our-services-container-element-img{
+    width: 90%;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+.our-services-container-element-img img{
+    width: 60%;
+    height: 120px;
+}
+.our-services-container-element-heading{
+    text-align: center;
+    margin-top: 30px;
+}
+.our-services-container-element-heading h4{
+    font-weight: 550;
+    font-size: 100%;
+}
+.our-services-container-element-content{
+    text-align: justify;
+    margin-top: 20px;
+    color: var(--page-paragraph-color);
+    font-size: 100%;
+}
 
+@media only screen and (max-width: 768px){
+    .our-services-heading{
+        text-align: center;
+    }
+    .our-services-heading h3{
+        font-size: 150%;
+    }
+    .our-services-heading h1{
+        font-size: 200%;
+    }
+    .our-services-container{
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        max-width: 100%;
+    }
+    .our-services-container-element{
+        -webkit-box-flex : 80%;
+            -ms-flex : 80%;
+                flex : 80%;
+        max-width: 80%;
+        min-width: 80%;
+        margin-top: 40px;
+    }
+    .our-services-container-element-img img{
+        height: 80px;
+        width: 100px;
+    }
+    .our-services-container-element-heading{
+        margin-top: 0;
+    }
+    .our-services-container-element-heading h4{
+        font-size: 130%;
+        
+    }
+}
+@media only screen and (max-width: 520px){
+    .our-services-container-element-img img{
+        height: 90px;
+    }
+}
 /* ----------------------contact us---------------------- */
 .main-page-contact-us{
-    width: 100vw;
+    max-width: 100vw;
     padding: 50px 7%;
+    box-sizing: border-box;
 }
 .main-page-contact-us-heading{
     text-align: center;
