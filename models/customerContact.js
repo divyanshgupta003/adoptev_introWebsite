@@ -13,16 +13,16 @@ const customerContactSchema = new mongoose.Schema({
         type : Number,
         required : true
     },
-    userType : {
-        type : String,
-        required : true
-    },
-    company : {
-        type : String
-    },
-    jobTitle : {
-        type : String
-    },
+    // userType : {
+    //     type : String,
+    //     required : true
+    // },
+    // company : {
+    //     type : String
+    // },
+    // jobTitle : {
+    //     type : String
+    // },
     message : {
         type : String,
         required : true

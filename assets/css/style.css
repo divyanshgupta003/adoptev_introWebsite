@@ -11,7 +11,7 @@ h1::se{
 } */
 :root {
     --page-color-scheme : #2cae66;
-    --page-background-color : rgb(250, 249, 249);
+    --page-background-color : rgba(210, 185, 233, 0.16);
     --page-paragraph-color : #8d8d8d;
     --page-heading-color : #373F41;
   }
@@ -78,7 +78,7 @@ section.main-section{
 }
 .main-page-main-section-content-heading h2{
     font-weight: 700;
-    font-size: 180%;
+    font-size: 200%;
 }
 .main-page-main-section-content-heading span{
     color: var(--page-color-scheme);
@@ -86,7 +86,7 @@ section.main-section{
 .main-page-main-section-content-illustration{
     height: 80px;
     background: url('../images/carbon_home-01.png');
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display: -webkit-box;
@@ -103,19 +103,21 @@ section.main-section{
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 300px;
+    margin : 0 auto;
 }
 .main-page-main-section-content-illustration::after{
     content: "";
     position: absolute;
     top : 50%;
-    left: 15%;
+    left: 0px;
     height: 4px;
-    width: 70%;
+    width: 310px;
     background-color: var(--page-color-scheme);
 }
 .main-page-main-section-content-illustration h2{
-    font-weight: 800;
-    font-size: 180%;
+    font-weight: 600;
+    font-size: 200%;
 }
 .main-page-main-section-content-illustration strong{
     color: var(--page-color-scheme);
@@ -173,13 +175,17 @@ section.main-section{
     }
     .main-page-main-section-content-illustration{
         height: 60px;
+        width: 280px;
+        background-size: contain;
     }
     .main-page-main-section-content-illustration h2{
-        font-weight: 800;
+        font-weight: 700;
         font-size: 180%;
     }
     .main-page-main-section-content-illustration::after{
         top : 50%;
+        width: 260px;
+        left: 2%;
     }
     .main-page-main-section-image img{
         max-width: 100%;
@@ -187,7 +193,7 @@ section.main-section{
 }
 /* -----------------------------about us-------------- */
 .main-page-about-us{
-    background-color: rgb(247, 148, 29 , 0.15);
+    background-color: var(--page-background-color);
     max-width: 100%;
     padding: 50px 7%;
 }
@@ -202,11 +208,12 @@ section.main-section{
 }
 .main-page-about-us-line{
     width: 130px;
-    flex: 8px;
-    min-height: 8px;
+    flex: 3px;
+    min-height: 3px;
     background-color: var(--page-heading-color);
-    margin: 20px 0;
+    margin: 10px 0px 30px 0;
 }
+
 .main-page-about-us-dots-container{
     max-width: 100%;
     display: flex;
@@ -216,8 +223,8 @@ section.main-section{
     margin: 20px 0;
 }
 .main-page-about-us-dots{
-    height: 13px;
-    width: 13px;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
     background-color: var(--page-heading-color);
     margin-left: 10px;
@@ -230,7 +237,7 @@ section.main-section{
     padding: 40px 7% 60px 7%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    background: url('../images/main-1-04.png');
+    /* background: url('../images/main-1-04.png'); */
     /* background-color: rgb(247, 148, 29 , 0.15); */
     /* background: url('../images/services-03.png');
     background-size: cover; */
@@ -238,10 +245,10 @@ section.main-section{
 .main-page-logistics-heading{
     width: 100%;
     text-align: center;
-    margin : 20px 0 10px 0;
+    margin : 0px 0 10px 0;
 }
 .main-page-logistics-heading h1{
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 600;
     color: var(--page-heading-color);
 }
@@ -311,13 +318,15 @@ section.main-section{
 }
 .main-page-logistics-inside-container-content-heading h3{
     font-weight: 700;
+    font-size: 140%;
 }
 .main-page-logistics-inside-container-content-paragraph{
     margin-top: 25px;
-    width: 50%;
+    width: 80%;
     color: #353535;
     text-align: justify;
-    font-size: 110%;
+    font-size: 115%;
+    letter-spacing: 1px;
 }
 .main-page-logistics-inside-container-content-line{
     margin-top: 20px;
@@ -354,12 +363,13 @@ section.main-section{
         /* height: 100vh; */
     }
     .main-page-logistics-heading{
-        font-size: 70%;
+        font-size: 100%;
         margin : 0;
     }
     .main-page-logistics-container{
         height : 480px;
         width: 100%;
+        margin-top: 26px;
     }
     .main-page-logistics-inside-container{
         -webkit-box-orient: vertical;
@@ -398,7 +408,7 @@ section.main-section{
         width: 90%;
     }
     .main-page-logistics-inside-container-content-heading{
-        font-size: 70%;
+        font-size: 100%;
     }
     .main-page-logistics-illustrations-container{
         margin-top: 60px;
@@ -422,20 +432,20 @@ section.main-section{
 .our-services{
     z-index: 0;
     max-width : 100%;
-    padding : 50px 7% 40px 7%;
+    padding : 40px 7% 40px 7%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    background-color: rgb(247, 148, 29 , 0.15);
+    background-color: var(--page-background-color);
 }
 .our-services-heading{
     text-align: center;
     width: 100%;
     /* text-align: center; */
-    margin : 30px 0 40px 0;
+    margin : 0px 0 40px 0;
 }
 .our-services-heading h1{
-    font-size : 250%;
+    font-size : 210%;
     font-weight: 600;
     color: var(--page-heading-color);
 }
@@ -450,7 +460,7 @@ section.main-section{
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: center;
 }
 .our-services-container-element{
     -webkit-box-flex : 30%;
@@ -465,8 +475,7 @@ section.main-section{
     
 }
 .our-services-container-element-img{
-    width: 75%;
-    height: 100px;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -475,7 +484,8 @@ section.main-section{
             justify-content: center;
 }
 .our-services-container-element-img img{
-    width: 60%;
+    width: auto;
+    height: 130%;
     height: 120px;
 }
 .our-services-container-element-heading{
@@ -558,21 +568,22 @@ section.main-section{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 20px;
+    margin-top: 30px;
+    flex-direction: column;
 }
 .main-page-contact-us-mobile-container{
-    max-width: 30%;
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    max-width: 90%;
+    -webkit-box-flex: 90%;
+        -ms-flex: 90%;
+            flex: 90%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        /* -ms-flex-direction: column;
+            flex-direction: column; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -596,26 +607,27 @@ section.main-section{
         -ms-flex-align: center;
             align-items: center;
     font-size: 40px;
-    color : #393939;
+    color : var(--page-color-scheme);
     cursor: pointer;
 }
 .main-page-contact-us-mobile-container h6{
     margin-top: 10px;
+    margin-left: 4px;
 }
 
 .main-page-contact-us-mail-container{
-    max-width: 30%;
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    max-width: 90%;
+    -webkit-box-flex: 90%;
+        -ms-flex: 90%;
+            flex: 90%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        /* -ms-flex-direction: column;
+            flex-direction: column; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -627,18 +639,18 @@ section.main-section{
 }
 
 .main-page-contact-us-location-container{
-    max-width: 30%;
-    -webkit-box-flex: 30%;
-        -ms-flex: 30%;
-            flex: 30%;
+    max-width: 90%;
+    -webkit-box-flex: 90%;
+        -ms-flex: 90%;
+            flex: 90%;
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        /* -ms-flex-direction: column;
+            flex-direction: column; */
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -665,6 +677,7 @@ section.main-section{
             -ms-flex: 90%;
                 flex: 90%;
         /* margin-top: 30px; */
+        flex-direction: column;
     }
     .main-page-contact-us-social-link{
         font-size: 50px;
@@ -678,6 +691,7 @@ section.main-section{
             -ms-flex: 90%;
                 flex: 90%;
         margin-top: 30px;
+        flex-direction: column;
     }
     .main-page-contact-us-location-container{
         max-width: 90%;
@@ -685,10 +699,11 @@ section.main-section{
             -ms-flex: 90%;
                 flex: 90%;
         margin-top: 30px;
+        flex-direction: column;
     }
 }
 
-/* .contact-us{
+.contact-us{
     max-width: 100%;
 }
 .contact-us-container{
@@ -706,7 +721,7 @@ section.main-section{
 }
 .contact-us-content-section-heading h2{
     font-size : 200%;
-    font-weight: 900;
+    font-weight: 600;
     color: #353535;
 }
 .contact-us-content-section-heading h3{
@@ -813,4 +828,7 @@ section.main-section{
         padding: 0;
         margin-top: 0px;
     }
-} */
+    .form-submission-after-message{
+        font-size: 130%;
+    }
+}

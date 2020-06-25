@@ -211,7 +211,7 @@ footer{
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgb(247, 148, 29 );;
+    background-color: var(--page-color-scheme);
 }
 .scroll-to-top i{
     color: white;

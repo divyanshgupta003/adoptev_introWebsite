@@ -8,9 +8,9 @@ module.exports.enquiry = async (req,res) =>{
             name : req.body.name,
             email : req.body.email,
             phone : req.body.phone,
-            userType : req.body.userType,
-            company : req.body.company,
-            jobTitle : req.body.position,
+            // userType : req.body.userType,
+            // company : req.body.company,
+            // jobTitle : req.body.position,
             message : req.body.enquiry
         });
         console.log(newEnquiry);

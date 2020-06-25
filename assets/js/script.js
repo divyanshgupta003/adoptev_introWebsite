@@ -71,21 +71,22 @@ window.addEventListener('scroll' ,  () => {
     let distFromTopRect = mainSectionDiv.getBoundingClientRect();
     let distFromTop = distFromTopRect.top;
     
-    console.log(distFromTop);
-    if( distFromTop <= '-100'){
+    if( distFromTop <= '-50'){
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
+        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
         scrollToTopIcon.style.display = "flex";
     }else{
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
+        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
         scrollToTopIcon.style.display = "none";
     }
     // if(distFromBottom <= '500'){
     //     document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
     //     scrollToTopIcon.style.display = "flex";
     // }else{
-    //     document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
+    //     
     //     scrollToTopIcon.style.display = "none";
     // }
 });
