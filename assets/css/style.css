@@ -324,7 +324,7 @@ section.main-section{
     margin-top: 25px;
     width: 80%;
     color: #353535;
-    text-align: justify;
+    /* text-align: justify; */
     font-size: 115%;
     letter-spacing: 1px;
 }

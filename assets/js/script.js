@@ -52,13 +52,13 @@ function toggleMenu(){
 
 // ---------------------scroll to top-------------------
 
-scrollToTop = ()=>{
-    window.scroll({
-        top: 0, 
-        left: 0, 
-        behavior: 'smooth'
-      });
-}
+// scrollToTop = ()=>{
+//     window.scroll({
+//         top: 0, 
+//         left: 0, 
+//         behavior: 'smooth'
+//       });
+// }
 
 // ----------------------------------------------------------------------------------------
 
