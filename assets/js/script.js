@@ -68,11 +68,11 @@ const scrollToTopIcon = document.getElementsByClassName('scroll-to-top')[0];
 // console.log(mainSectionDiv);
 document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
 window.addEventListener('scroll' ,  () => {
-    let distFromBottomRect = mainSectionDiv.getBoundingClientRect();
-    let distFromBottom = distFromBottomRect.bottom;
+    let distFromTopRect = mainSectionDiv.getBoundingClientRect();
+    let distFromTop = distFromTopRect.top;
     
-    // console.log(distFromBottom);
-    if(distFromBottom <= '400'){
+    console.log(distFromTop);
+    if( distFromTop <= '-100'){
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         scrollToTopIcon.style.display = "flex";
@@ -81,13 +81,13 @@ window.addEventListener('scroll' ,  () => {
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         scrollToTopIcon.style.display = "none";
     }
-    if(distFromBottom <= '500'){
-        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
-        scrollToTopIcon.style.display = "flex";
-    }else{
-        document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
-        scrollToTopIcon.style.display = "none";
-    }
+    // if(distFromBottom <= '500'){
+    //     document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
+    //     scrollToTopIcon.style.display = "flex";
+    // }else{
+    //     document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
+    //     scrollToTopIcon.style.display = "none";
+    // }
 });
 
 //-----------------------------------------------------------------------------------------
