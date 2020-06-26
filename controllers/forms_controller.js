@@ -13,7 +13,7 @@ module.exports.enquiry = async (req,res) =>{
             // jobTitle : req.body.position,
             message : req.body.enquiry
         });
-        console.log(newEnquiry);
+        // console.log(newEnquiry);
         if(req.xhr){
             return res.status(200).json({
                 message : "Our Team will Contact You Soon"
@@ -21,7 +21,7 @@ module.exports.enquiry = async (req,res) =>{
         }
         return res.redirect('back');
     }catch(err){
-        return console.log('error in storong the enquiry' , err);
+        return res.redirect('back');
     }
 }
 
@@ -36,7 +36,6 @@ module.exports.enterpriseForm = async (req,res)=>{
             companyLocation : req.body.companyLocation,
             message : req.body.message
         });
-        console.log(newEnquiry);
         if(req.xhr){
             return res.status(200).json({
                 message : "Our Team will Contact You Soon"
@@ -45,7 +44,7 @@ module.exports.enterpriseForm = async (req,res)=>{
         return res.redirect('back');
     }
     catch(err){
-        console.log(err);
+        return res.redirect('back');
     }
 }
 
@@ -60,7 +59,6 @@ module.exports.partnerUsForm = async (req,res)=>{
             partnerType : req.body.partnerType,
             message : req.body.message
         });
-        console.log(newEnquiry);
         if(req.xhr){
             return res.status(200).json({
                 message : "Our Team will Contact You Soon"
@@ -69,6 +67,6 @@ module.exports.partnerUsForm = async (req,res)=>{
         return res.redirect('back');
     }
     catch(err){
-        console.log(err);
+        return res.redirect('back');
     }
 }

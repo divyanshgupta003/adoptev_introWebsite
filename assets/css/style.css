@@ -50,7 +50,7 @@ h1,h2,h3,h4,h5,h6 {
 /* -------------------------------landing section----------------------------------------------- */
 section.main-section{
     max-width: 100vw;
-    height : 100vh;
+    height : 600px;
     background: url("../images/Home-bg-01.png");
     background-position: center;
     background-size: cover;
@@ -151,6 +151,10 @@ section.main-section{
     }
 }
 @media only screen and (max-width: 768px){
+    section.main-section{
+        /* height: 90vh; */
+        height : auto;
+    }
     .main-page-main-section-container{
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -234,7 +238,7 @@ section.main-section{
 /* -----------------------main-page-logistics--------------------------- */
 .main-page-logistics{
     max-width: 100vw;
-    padding: 40px 7% 60px 7%;
+    padding: 70px 7% 60px 7%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     /* background: url('../images/main-1-04.png'); */
@@ -245,7 +249,7 @@ section.main-section{
 .main-page-logistics-heading{
     width: 100%;
     text-align: center;
-    margin : 0px 0 10px 0;
+    margin : 0px 0 30px 0;
 }
 .main-page-logistics-heading h1{
     font-size: 200%;
@@ -259,7 +263,7 @@ section.main-section{
 .main-page-logistics-container{
     width: 100%;
     /* background: url('../images/transport-isometric-flowchart-with-various-vehicles-blue-background-3d_1284-32252.jpg'); */
-    height: 55vh;
+    height: 400px;
     position: relative;
 }
 .main-page-logistics-inside-container{
@@ -396,7 +400,12 @@ section.main-section{
         -webkit-box-flex: 90%;
             -ms-flex: 90%;
                 flex: 90%;
+        margin-bottom: 30px;
+        margin-top: 150px;
     }
+    /* .main-page-logistics-inside-container-small-immge-container img{
+        max-height: 100%;
+    } */
     .main-page-logistics-inside-container-content{
         width: 100%;
         -webkit-box-flex : 100%;
@@ -411,15 +420,19 @@ section.main-section{
         font-size: 100%;
     }
     .main-page-logistics-illustrations-container{
-        margin-top: 60px;
+        margin-top: 170px;
     }
 }
 @media only screen and (max-width: 520px){
     .main-page-logistics-inside-container-content{
         margin-top: 20px;
     }
+    .main-page-logistics-inside-container-small-immge-container{
+        margin-top: 0px;
+    }
     .main-page-logistics-illustrations-container{
         flex-wrap: wrap;
+        margin-top: 100px;
     }
     .main-page-logistics-illustrations-element-container{
         flex: 50%;
@@ -559,6 +572,10 @@ section.main-section{
 }
 .main-page-contact-us-heading{
     text-align: center;
+    margin-top: 30px;
+}
+.main-page-contact-us-heading h3{
+    font-weight: 600;
 }
 .main-page-contact-us-container{
     max-width: 100%;
@@ -568,7 +585,7 @@ section.main-section{
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 30px;
+    margin-top: 10px;
     flex-direction: column;
 }
 .main-page-contact-us-mobile-container{
