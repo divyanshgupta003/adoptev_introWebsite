@@ -28,7 +28,7 @@ a , a:active {
 nav.desktop-navbar{
     background-color : transparent;
     position: fixed;
-    height : 11vh;
+    height : 70px;
     width : 100vw;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -39,41 +39,42 @@ nav.desktop-navbar{
     -o-transition: all ,0.4s ease;
     transition: all ,0.4s ease;
     color: black;
-    padding: 0 7%;
+    padding: 0 5% 0 7%;
 }
 .desktop-navbar-logo{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    -webkit-box-flex : 35%;
-        -ms-flex : 35%;
-            flex : 35%;
-    max-width: 35%;
+    -webkit-box-flex : 30%;
+        -ms-flex : 30%;
+            flex : 30%;
+    max-width: 30%;
     margin-top: 10px;
 }
+.desktop-navbar-logo img{
+    width: 185px;
+    max-height: 60px;
+}
 .desktop-navbar-links{
-    -webkit-box-flex : 65%;
-        -ms-flex : 65%;
-            flex : 65%;
-    max-width: 65%;
+    -webkit-box-flex : 70%;
+        -ms-flex : 70%;
+            flex : 70%;
+    max-width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    align-items: center;
     color: black;
+    justify-content: flex-end;
 }
 .desktop-navbar-links span{
-    margin-left: 30px;
+    margin-left: 20px;
+    cursor: pointer;
 }
 .desktop-navbar-links span a,
 .desktop-navbar-links span a:active
 {
     text-decoration: none;
-    font-size: 110%;
+    font-size: 100%;
 } 
 .desktop-navbar-links span a:hover{
     color: var(--page-color-scheme);

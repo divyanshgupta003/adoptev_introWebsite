@@ -55,7 +55,7 @@ section.main-section{
     background-position: center;
     background-size: cover;
     background-attachment:fixed ;
-    padding-top: 10vh;
+    padding-top: 80px;
 }
 .main-page-main-section-container{
     height: 100%;
@@ -70,7 +70,7 @@ section.main-section{
         -ms-flex: 40%;
             flex: 40%;
     max-width: 40%;
-    padding: 13% 5%;
+    padding: 6% 5%;
 }
 .main-page-main-section-content-heading{
     max-width: 100%;
@@ -755,7 +755,7 @@ section.main-section{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    padding : 10vh;
+    padding : 5%;
 }
 .contact-us-form-section-container{
     width: 80%;
