@@ -64,7 +64,7 @@ function toggleMenu(){
 
 // ---------------------changing the color of navbar on scroll--------------------------
 const mainSectionDiv = document.getElementsByClassName('navbar-color-change-div')[0];
-const scrollToTopIcon = document.getElementsByClassName('scroll-to-top')[0];
+// const scrollToTopIcon = document.getElementsByClassName('scroll-to-top')[0];
 // console.log(mainSectionDiv);
 document.getElementsByClassName('desktop-navbar')[0].style.color = "white";
 window.addEventListener('scroll' ,  () => {
@@ -75,12 +75,12 @@ window.addEventListener('scroll' ,  () => {
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "white";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
-        scrollToTopIcon.style.display = "flex";
+        // scrollToTopIcon.style.display = "flex";
     }else{
         document.getElementsByClassName('desktop-navbar')[0].style.backgroundColor = "transparent";
         document.getElementsByClassName('desktop-navbar')[0].style.color = "black";
         document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "transparent";
-        scrollToTopIcon.style.display = "none";
+        // scrollToTopIcon.style.display = "none";
     }
     // if(distFromBottom <= '500'){
     //     document.getElementsByClassName('mobile-navbar')[0].style.backgroundColor = "white";
