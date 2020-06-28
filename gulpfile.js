@@ -4,11 +4,11 @@ const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 
-gulp.task('css' , function(done){
-    gulp.src('./assets/css/*.css')
+gulp.task('css' , function(){
+    return gulp.src('./assets/**/*.css')
         .pipe(cssnano())
-        .pipe(gulp.dest('./public/assets/css'))
-    done();
+        .pipe(gulp.dest('./public/assets'))
+
 });
 
 gulp.task('js' , function(done){

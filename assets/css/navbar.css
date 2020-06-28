@@ -1,3 +1,4 @@
+
 /* -------------------------------navbar----------------------------------------------- */
 html { 
     scroll-behavior: smooth;
@@ -37,6 +38,7 @@ nav.desktop-navbar{
     display: flex;
     -webkit-transition: all ,0.4s ease;
     -o-transition: all ,0.4s ease;
+    z-index: 999;
     transition: all ,0.4s ease;
     color: black;
     padding: 0 5% 0 7%;
@@ -48,6 +50,7 @@ nav.desktop-navbar{
         -ms-flex : 30%;
             flex : 30%;
     max-width: 30%;
+    z-index: 999;
     margin-top: 10px;
 }
 .desktop-navbar-logo img{
@@ -62,12 +65,18 @@ nav.desktop-navbar{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: black;
-    justify-content: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    z-index: 999;
 }
 .desktop-navbar-links span{
     margin-left: 20px;
+    z-index: 999;
     cursor: pointer;
 }
 .desktop-navbar-links span a,
@@ -81,6 +90,7 @@ nav.desktop-navbar{
 }
 .desktop-navbar-links span button{
     background-color: var(--page-color-scheme);
+    z-index: 999;
     padding: 5px 10px;
     color: black;
     outline: none;
@@ -96,6 +106,7 @@ nav.mobile-navbar{
     height : 60px;
     background-color: transparent;
     position: fixed;
+    z-index: 999;
     top : 0%;
     left : 0%;
     display: none;
@@ -106,6 +117,7 @@ nav.mobile-navbar{
     top : 20px;
     right : 35px;
     -webkit-transition: all , 0.4s ease;
+    z-index: 999;
     -o-transition: all , 0.4s ease;
     transition: all , 0.4s ease;
 
@@ -113,12 +125,14 @@ nav.mobile-navbar{
 .burger-container.close{
     -webkit-transform: rotate(180deg);
         -ms-transform: rotate(180deg);
+        z-index: 999;
             transform: rotate(180deg);
 }
 .burger-container-lines{
     width : 28px;
     height : 4px;
     margin : 0 0 5px 0;
+    z-index: 999;
     background-color: black;
 }
 .burger-container.close div:nth-child(1){
@@ -140,6 +154,7 @@ nav.mobile-navbar{
     top : 50%;
     width : 120px ;
     height: 50px;
+    z-index: 999;
 }
 .mobile-navbar-logo img{
     max-width: 100%;
@@ -165,7 +180,7 @@ nav.mobile-navbar{
     transition: all,0.3s ease;
     overflow: hidden;
     text-align: center;
-    
+    z-index: 999;
 }
 .mobile-navbar-links div{
     max-width : 100%;
@@ -173,7 +188,9 @@ nav.mobile-navbar{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 999;
     /* padding: 5px 10% ; */
+    
 }   
 .mobile-navbar-links a{
     max-width : 100%;
@@ -183,6 +200,7 @@ nav.mobile-navbar{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 999;
     padding: 16px 10%;
     /* justify-content: center; */
 } 
