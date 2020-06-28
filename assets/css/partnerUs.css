@@ -85,7 +85,7 @@ section.partner-us-main-section{
 }
 
 @media only screen and (max-width: 520px){
-    section.main-section{
+    section.partner-us-main-section{
         /* height: 90vh; */
         height: auto;
         max-width: 100vw;

@@ -29,7 +29,7 @@ a , a:active {
 nav.desktop-navbar{
     background-color : transparent;
     position: fixed;
-    height : 70px;
+    height : 80px;
     width : 100vw;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -54,8 +54,8 @@ nav.desktop-navbar{
     margin-top: 10px;
 }
 .desktop-navbar-logo img{
-    width: 185px;
-    max-height: 60px;
+    width: 165px;
+    max-height: 70px;
 }
 .desktop-navbar-links{
     -webkit-box-flex : 70%;
