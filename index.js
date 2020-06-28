@@ -17,6 +17,7 @@ app.use(express.urlencoded());
 //setting the static folder
 app.use(express.static('./public/assets'));
 
+
 // set up the view engine
 app.set('view engine', 'ejs');
 app.set('views', './views');
