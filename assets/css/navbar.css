@@ -40,7 +40,6 @@ nav.desktop-navbar{
     transition: all ,0.4s ease;
     color: black;
     padding: 0 5% 0 7%;
-    z-index: 999;
 }
 .desktop-navbar-logo{
     -webkit-box-sizing: border-box;
@@ -63,13 +62,9 @@ nav.desktop-navbar{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     color: black;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
 }
 .desktop-navbar-links span{
     margin-left: 20px;
@@ -105,7 +100,6 @@ nav.mobile-navbar{
     left : 0%;
     display: none;
     padding: 0 7%;
-    z-index: 999;
 }
 .burger-container{
     position: absolute;
@@ -171,7 +165,7 @@ nav.mobile-navbar{
     transition: all,0.3s ease;
     overflow: hidden;
     text-align: center;
-    z-index: 999;
+    
 }
 .mobile-navbar-links div{
     max-width : 100%;
