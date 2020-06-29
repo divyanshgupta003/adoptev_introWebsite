@@ -4,7 +4,7 @@ $(document).ready(function(){
         e.preventDefault();
         $.ajax({
             type : 'POST',
-            url : 'http://localhost:8000/form/enquiry',
+            url : '/form/enquiry',
             data :enquiryForm.serialize(),
             success : () =>{
                 $('.form-submission-after-message').css({

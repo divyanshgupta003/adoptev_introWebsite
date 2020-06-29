@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6,p {
 section.partner-us-main-section{
     background: url('../images/main-1-04.png');
     max-width: 100vw;
-    height : 600px;
+    height : 700px;
     padding-top: 60px;
     overflow: hidden;
 }
@@ -42,7 +42,7 @@ section.partner-us-main-section{
         -ms-flex: 45%;
             flex: 45%;
     max-width: 45%;
-    padding: 10% 4%;
+    padding: 14% 4%;
 }
 .partner-us-main-section-content-heading{
     max-width: 100%;
@@ -78,6 +78,7 @@ section.partner-us-main-section{
         -ms-flex-align: center;
             align-items: center;
     height: 500px;
+    padding-top: 80px;
 }
 .partner-us-main-section-image img{
     max-width: 100%;
@@ -90,6 +91,12 @@ section.partner-us-main-section{
         height: auto;
         max-width: 100vw;
         overflow-x: hidden;
+    }
+    .partner-us-main-section-image{
+        padding-top: 0;
+    }
+    .partner-us-main-section-content{
+        padding-bottom: 10%;
     }
 }
 @media only screen and (max-width: 768px){
@@ -144,7 +151,7 @@ section.partner-us-main-section{
     margin : 30px 0 10px 0;
 }
 .section-first-partner-us-heading h2{
-    font-size: 160%;
+    font-size: 170%;
     font-weight: 600;
     color: var(--page-heading-color);
 }
@@ -262,8 +269,8 @@ section.partner-us-main-section{
 }
 @media only screen and (max-width: 520px){
     .section-first-partner-us-container-img-part img{
-        width: 90%;
-        height: 200px;
+        width: 70%;
+        /* height: 200px; */
     }
 }
 
@@ -284,7 +291,7 @@ section.partner-us-main-section{
     margin : 10px 0 10px 0;
 }
 .section-second-partner-us-heading h2{
-    font-size: 160%;
+    font-size: 170%;
     font-weight: 600;
     color: var(--page-heading-color);
 }
@@ -402,8 +409,9 @@ section.partner-us-main-section{
 }
 @media only screen and (max-width: 520px){
     .section-second-partner-us-container-img-part img{
-        width: 90%;
-        height: 200px;
+        width: 70%;
+        /* height: 200px; */
+        height: auto;
     }
 }
 
@@ -424,7 +432,7 @@ section.partner-us-main-section{
     margin : 10px 0 10px 0;
 }
 .section-third-partner-us-heading h2{
-    font-size: 160%;
+    font-size: 170%;
     /* font-size : 20%; */
     font-weight: 600;
     color: var(--page-heading-color);
@@ -547,8 +555,8 @@ section.partner-us-main-section{
 }
 @media only screen and (max-width: 520px){
     .section-third-partner-us-container-img-part img{
-        width: 90%;
-        height: 200px;
+        width: 70%;
+        height: auto;
     }
 }
 

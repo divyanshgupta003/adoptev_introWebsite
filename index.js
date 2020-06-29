@@ -15,7 +15,7 @@ app.set('layout extractScripts', true);
 app.use(express.urlencoded());
 
 //setting the static folder
-app.use(express.static('./public/assets'));
+app.use(express.static('./assets'));
 
 // set up the view engine
 app.set('view engine', 'ejs');

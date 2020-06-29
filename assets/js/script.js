@@ -92,10 +92,3 @@ window.addEventListener('scroll' ,  () => {
 });
 
 //-----------------------------------------------------------------------------------------
-navbarClickEvent = (e)=>{
-    idOfHeading = e.getAttribute('data-toggle');
-    const headingToGo = document.querySelector('' + idOfHeading);
-    headingToGo.scrollIntoView(true);
-    
-    
-}

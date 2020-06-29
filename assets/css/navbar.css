@@ -29,7 +29,7 @@ a , a:active {
 nav.desktop-navbar{
     background-color : transparent;
     position: fixed;
-    height : 80px;
+    height : 70px;
     width : 100vw;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -51,11 +51,11 @@ nav.desktop-navbar{
             flex : 30%;
     max-width: 30%;
     z-index: 999;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 .desktop-navbar-logo img{
     width: 165px;
-    max-height: 70px;
+    max-height: 53px;
 }
 .desktop-navbar-links{
     -webkit-box-flex : 70%;
@@ -96,9 +96,9 @@ nav.desktop-navbar{
     outline: none;
     border: none;
 }
-#navbar-logo {
+/* #navbar-logo {
     height: 80%;
-}
+} */
 nav.mobile-navbar{
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -152,8 +152,8 @@ nav.mobile-navbar{
             transform: translate(-50%,-50%);
     left : 90px;
     top : 50%;
-    width : 120px ;
-    height: 50px;
+    width : 140px ;
+    height: 45px;
     z-index: 999;
 }
 .mobile-navbar-logo img{
@@ -243,7 +243,7 @@ footer{
     display: flex;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 20px 5%;
+    padding: 20px 7%;
     border-bottom: 1px solid #4e4d4e;
 }
 .footer-content-container{
@@ -253,7 +253,7 @@ footer{
     max-width: 35%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    padding: 0 3%;
+    padding: 0 3% 0 0;
     border-right: 1px solid white;
 }
 .footer-content-image-container{

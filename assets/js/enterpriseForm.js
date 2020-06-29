@@ -2,7 +2,7 @@ const formContainer = document.getElementsByClassName('enterprise-pop-up-form')[
 const backgroundBlur = document.getElementsByClassName('enterprise-blur-page')[0];
 
 const appearForm = ()=>{
-    formContainer.style.top = "50%";
+    formContainer.style.top = "56%";
     backgroundBlur.style.display = "block";
 }
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
         e.preventDefault();
         $.ajax({
             type : 'POST',
-            url : 'http://localhost:8000/form/enterprise-form',
+            url : '/form/enterprise-form',
             data :enquiryForm.serialize(),
             success : () =>{
                 $('.enterprise-form-message-after-submission').css({

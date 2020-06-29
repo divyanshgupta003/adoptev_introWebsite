@@ -3,7 +3,7 @@ const backgroundBlur = document.getElementsByClassName('partner-us-blur-page')[0
 const crossButton = document.getElementsByClassName('.partner-us-blur-page-cross-mark')[0];
 
 const appearForm = ()=>{
-    formContainer.style.top = "50%";
+    formContainer.style.top = "56%";
     backgroundBlur.style.display = "block";
 }
 
@@ -18,7 +18,7 @@ $(document).ready(function(){
         e.preventDefault();
         $.ajax({
             type : 'POST',
-            url : 'http://localhost:8000/form/partner-us-form',
+            url : '/form/partner-us-form',
             data :enquiryForm.serialize(),
             success : () =>{
                 $('.partner-us-form-message-after-submission').css({
