@@ -15,7 +15,7 @@ app.set('layout extractScripts', true);
 app.use(express.urlencoded());
 
 //setting the static folder
-app.use(express.static('./assets'));
+app.use(express.static('./public/assets'));
 
 // set up the view engine
 app.set('view engine', 'ejs');
@@ -42,6 +42,5 @@ mongoose.connect(keys.mongouri , {  useNewUrlParser : true,
         }
         console.log('Port running fine on ' + port);
     });
-    
 });
 

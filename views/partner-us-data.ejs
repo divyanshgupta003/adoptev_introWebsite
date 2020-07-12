@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/dashboard.css">
+<section class="contact-us-dashboard-landing-section navbar-color-change-div">
+    <div class="contact-us-dashboard-landing-section-heading">
+        <h2>Contact Us <strong style="color: #76c04d;">DashBoard</strong> </h2>
+    </div>
+</section>
+<section class="contact-us-dashboard-navbar">
+    <a href="/fd2a6788b6e37c7adad0aa/admin/contactus"><span>Contact Us</span></a>
+    <a href="/fd2a6788b6e37c7adad0aa/admin/enterprises"><span>Enterprises</span></a>
+</section>
+<section class="contact-us-dashboard-data-table">
+    <div class="contact-us-dashboard-data-table-container">
+        <table id="contact-us-dashboard-data-table-element">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th id="contact-us-dashboard-data-table-element-message">Message</th>
+              </tr>
+              <%for(data of partnerData){%>
+              <tr>
+                <td><%=data.name%></td>
+                <td><%=data.email%></td>
+                <td><%=data.phone%></td>
+                <td><%=data.message%></td>
+              </tr>
+              <%}%>
+        </table>
+    </div>
+</section>
+
+        
